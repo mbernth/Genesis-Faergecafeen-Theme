@@ -1,0 +1,43 @@
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: $color-black;
+	clear: both;
+	padding-top: 40px;
+}
+
+.footer-widgets,
+.footer-widgets a {
+	color: $color-primary-one;
+}
+
+.footer-widgets input {
+	border: 1px solid $color-black;
+}
+
+.footer-widgets a.button,
+.footer-widgets a:hover,
+.footer-widgets a:focus {
+	color: $color-white;
+}
+
+.footer-widgets li {
+	border-bottom: 1px dotted $color-black;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 40px;
+}
+
+.footer-widgets p:last-child {
+	margin-bottom: 0;
+}
+
+.footer-widgets .widget-area {
+	display:block;
+	float:left;
+	@include grid(3, 60, 1200);
+}
