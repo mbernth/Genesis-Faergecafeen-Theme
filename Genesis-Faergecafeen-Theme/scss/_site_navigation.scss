@@ -3,9 +3,11 @@
 
 .genesis-nav-menu {
 	clear: both;
-	@include font(1.6, 2.4);
-	line-height: 1;
+	@include font(1.4, 2.0);
+	letter-spacing:0.1rem;
+	font-weight:700;
 	width: 100%;
+	text-shadow: 3px 4px 8px rgba(45, 42, 35, 0.5);
 }
 
 .genesis-nav-menu .menu-item {
@@ -14,19 +16,23 @@
 }
 
 .genesis-nav-menu a {
-	color: $color-black;
+	color: $color-primary-two;
 	text-decoration: none;
 	display: block;
-	padding: 30px 24px;
+	padding: 30px 15px 25px;
+	border-bottom:5px solid transparent;
+	text-transform:uppercase;
 }
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .current_page_parent a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-	color: $color-primary-one;
-	text-decoration: underline;
+	color: $color-primary-two;
+	text-decoration: none;
+	border-bottom:5px solid $color-background;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -38,19 +44,33 @@
 	-ms-transition:     opacity .4s ease-in-out;
 	-o-transition:      opacity .4s ease-in-out;
 	transition:         opacity .4s ease-in-out;
-	width: 200px;
+	width: 280px;
 	z-index: 99;
 }
-
+.genesis-nav-menu .current_page_parent a:hover,
+.genesis-nav-menu .menu-item-has-children a:hover{
+	border-bottom:5px solid #375847;
+}
 .genesis-nav-menu .sub-menu a {
-	background-color: $color-white;
-	border: 1px solid $color-black;
-	border-top: 0;
+	background-color: #375847;
+	border-: none;
+	border-bottom:1px solid #cdd5d1;
 	@include font(1.4, 1.8);
+	font-weight:400;
+	text-shadow:none;
+	color:$color-white;
+	text-transform:inherit;
 	padding: 20px;
 	position: relative;
-	width: 200px;
+	width: 280px;
 	word-wrap: break-word;
+}
+.genesis-nav-menu .sub-menu a:last-child{
+	border-bottom:none;
+}
+.genesis-nav-menu .sub-menu a:hover{
+	color:$color-white;
+	background-color: #698275;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -109,9 +129,11 @@
 
 /* ## Site Header Navigation
 --------------------------------------------- */
+.site-header nav {
+	border-top:1px solid $color-primary-two;
+}
 
 .site-header .sub-menu {
-	border-top: 1px solid $color-black;
 }
 
 .site-header .sub-menu .sub-menu {
@@ -156,5 +178,38 @@
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: $color-white;
+	background-color: darken($color-primary-one, 20%);
+}
+
+.nav-secondary .wrap {
+	width:100%;
+	max-width:90%;
+}
+
+.nav-secondary .genesis-nav-menu {
+	text-align:right;
+}
+
+.nav-secondary .genesis-nav-menu a {
+	color: $color-primary-two;
+	padding: 10px 15px;
+	@include font(1.2, 1.4);
+	font-weight:400;
+	letter-spacing: 0.1rem;
+	text-shadow: none;
+	border-bottom:none;
+	text-transform:inherit;
+}
+.nav-secondary .genesis-nav-menu a:hover,
+.nav-secondary .genesis-nav-menu a:focus,
+.nav-secondary .genesis-nav-menu .current-menu-item > a,
+.nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+	color: $color-white;
+	text-decoration: none;
+	border-bottom:none;
+}
+
+.genesis-nav-menu .menu-item.menu-item-language-current {
+	display:none;
 }

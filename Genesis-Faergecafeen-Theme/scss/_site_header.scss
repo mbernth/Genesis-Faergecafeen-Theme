@@ -2,21 +2,20 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: $color-white;
-	min-height: 160px;
+	background-color: $color-primary-one;
 }
 
 .site-header .wrap {
-	padding: 40px 0;
+	width:100%;
+	max-width:90%;
 }
 
 /* ## Title Area
 --------------------------------------------- */
 
 .title-area {
-	float: left;
-	padding: 10px 0;
-	width: 360px;
+	padding: 40px 0 20px;
+	width: 100%;
 }
 
 .header-full-width .title-area {
@@ -27,6 +26,7 @@
 	@include font(3.2, 3.2);
 	font-weight: 400;
 	line-height: 1.2;
+	text-align:center;
 }
 
 .site-title a,
@@ -40,6 +40,16 @@
 	float: left;
 	min-height: 60px;
 	width: 100%;
+}
+
+.site-title a, .site-title a:hover {
+    background: url(images/logo.svg) no-repeat center top;
+    display: block;
+    width: 240px;
+    height: 92px;
+    margin: 0 auto;
+    text-indent: -999em;
+    text-decoration: none;
 }
 
 .site-description {
@@ -63,7 +73,6 @@
 --------------------------------------------- */
 
 .site-header .widget-area {
-	float: right;
-	text-align: right;
-	@include structure(800, 1200);
+	text-align: center;
+	width:100%;
 }

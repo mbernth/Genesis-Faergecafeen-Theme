@@ -10,11 +10,17 @@ define( 'CHILD_THEME_NAME', 'Genesis Mono Basics' );
 define( 'CHILD_THEME_URL', 'http://www.monovoce.com/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
-//* Enqueue Google Fonts
-add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
-function genesis_sample_google_fonts() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700', array(), CHILD_THEME_VERSION );
+
+
+//* Header settings
+//* ==============================================================================================================================
+
+
+//* Enqueue Google Fonts
+add_action( 'wp_enqueue_scripts', 'mono_basic_scripts' );
+function mono_basic_scripts() {
+
 	wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_style( 'dashicons' );
 
@@ -72,6 +78,12 @@ function mono_favicon_filter( $favicon ) {
 
 }
 
+
+
+//* Content settings
+//* ==============================================================================================================================
+
+
 //* Add Accessibility support
 add_theme_support( 'genesis-accessibility', array( 'headings', 'drop-down-menu',  'search-form', 'skip-links', 'rems' ) );
 
@@ -80,3 +92,36 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+//* Unregister layout settings
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+//* Unregister secondary sidebar
+unregister_sidebar( 'sidebar-alt' );
+
+//* Unregister secondary sidebar 
+add_action( 'genesis_sidebar_alt', 'genesis_do_sidebar_alt' );
+
+//* Reposition the secondary navigation menu
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+add_action( 'genesis_before_header', 'genesis_do_subnav', 15 );
+
+//* Hook before header widget area above header
+add_action( 'genesis_before_header', 'mono_before_header' );
+function mono_before_header() {
+
+	genesis_widget_area( 'before-header', array(
+		'before' => '<div class="before-header" class="widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+}
+
+//* Register widget areas
+genesis_register_sidebar( array(
+	'id'          => 'before-header',
+	'name'        => __( 'Before Header', 'mono' ),
+	'description' => __( 'This is the before header widget area.', 'mono' ),
+) );

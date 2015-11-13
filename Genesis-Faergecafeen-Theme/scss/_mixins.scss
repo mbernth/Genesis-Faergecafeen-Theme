@@ -6,27 +6,39 @@ MIXINS
 --------------------------------------------- */
 
 /* White */
-$color-white: #ffffff;
-$color-black_rgb: rgb(255, 255, 255) ; /* White */
+$color-white: #f9f6ef;
+$color-black_rgb: rgb(249, 246, 239) ; /* White */
 
 /* Black */
-$color-black: #333; /* Black */
-$color-black_rgb: rgb(51, 51, 51); /* Black */
+$color-black: #2d2a23; /* Black */
+$color-black_rgb: rgb(45, 42, 35); /* Black */
 
 /* Background */
-$color-background: #f5f5f5;
-$color-background_rgb: rgb(245, 245, 245);
+$color-background: #f3eddf;
+$color-background_rgb: rgb(243, 237, 223);
+
+/* Primary One (Green) */
+$color-primary-one: #052e19; /* 100% Green */
+$color-primary-one_rgb: rgb(5, 46, 25) ; /* Green */
+
+/* Primary Two (Brown) */
+$color-primary-two: #e0d3b0; /* 100% Brown */
+$color-primary-two_rgb: rgb(224, 211, 176) ; /* Brown */
+
+/* Secondary One (Signal Green) */
+$color-secondary-one: #79ad36; /* 100% Signal Green */
+$color-secondary-one_rgb: rgb(121, 173, 54) ; /* Signal Green */
 
 /* Primary One (Red) */
-$color-primary-one: #c3251d; /* 100% red */
-$color-primary-one_rgb: rgb(195, 37, 29) ; /* red */
+$color-secondary-two: #d71a44; /* 100% Red */
+$color-secondary-two_rgb: rgb(215, 26, 68) ; /* Red */
 
 /* Typography
 --------------------------------------------- */
 
 /* Primary Font Faminly */
-$font-bread: 'Lato', sans-serif;
-$font-headlines: 'Lato', sans-serif;
+$font-bread: "ff-tisa-web-pro",serif;;
+$font-headlines: "ff-tisa-web-pro",serif;;
 
 /* Basic Font Sizes mixin */
 @mixin font-size($sizeValue: 1.6) {
