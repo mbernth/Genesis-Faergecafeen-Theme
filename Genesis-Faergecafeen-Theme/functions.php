@@ -125,3 +125,32 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Before Header', 'mono' ),
 	'description' => __( 'This is the before header widget area.', 'mono' ),
 ) );
+
+//* Display featured imgae on page and posts
+add_action( 'genesis_after_header', 'single_post_featured_image', 9 );
+function single_post_featured_image() {
+	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
+		printf( '<div %s>', genesis_attr( 'featured-image' ) );
+		genesis_structural_wrap( 'featured-image' );
+			genesis_image();
+	    genesis_structural_wrap( 'featured-image', 'close' );
+		echo '</div><!-- end #featured-image -->';
+	endif;
+}
+
+/* Add landing body class to the head
+add_filter( 'body_class', 'mono_add_body_class' );
+function mono_add_body_class( $classes ) {
+	if ( (is_single() || is_page()) && has_post_thumbnail()){
+	$classes[] = 'featured-image';
+	return $classes;
+	}
+}
+*/
+
+add_filter( 'body_class', 'sp_body_class' );
+function sp_body_class( $classes ) {
+	if ( (is_single() || is_page()) && has_post_thumbnail() )
+		$classes[] = 'featured-image';
+		return $classes;
+}

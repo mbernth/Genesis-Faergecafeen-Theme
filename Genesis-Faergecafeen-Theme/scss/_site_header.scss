@@ -4,7 +4,9 @@
 .site-header {
 	background-color: $color-primary-one;
 }
-
+.featured-image .site-header {
+	background-color: transparent;
+}
 .site-header .wrap {
 	width:100%;
 	max-width:90%;

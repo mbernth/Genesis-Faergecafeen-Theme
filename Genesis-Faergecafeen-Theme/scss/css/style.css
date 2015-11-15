@@ -285,7 +285,7 @@ body > div {
 body {
   background-color: #f3eddf;
   color: #2d2a23;
-  font-family: "ff-tisa-web-pro", serif;
+  font-family: "capitolium-news-2", serif;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 26px;
@@ -369,7 +369,7 @@ h4,
 h5,
 h6 {
   color: #2d2a23;
-  font-family: "ff-tisa-web-pro", serif;
+  font-family: "capitolium-news-2", serif;
   font-weight: 400;
   margin: 0 0 10px; }
 
@@ -1022,6 +1022,9 @@ img.alignright,
 .site-header {
   background-color: #052e19; }
 
+.featured-image .site-header {
+  background-color: transparent; }
+
 .site-header .wrap {
   width: 100%;
   max-width: 90%; }
@@ -1282,7 +1285,7 @@ img.alignright,
   border-bottom: none; }
 
 .genesis-nav-menu .menu-item.menu-item-language-current {
-  display: none; }
+  /* display:none; */ }
 
 /*
 - Content Area
