@@ -16,10 +16,11 @@ jQuery(function( $ ){
 
 	});
 
-	$("header .genesis-nav-menu, .nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"></div>');
+	$("header .genesis-nav-menu, .nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>');
 
 	$(".responsive-menu-icon").click(function(){
 		$(this).next("header .genesis-nav-menu, .nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu").slideToggle();
+		$( '.responsive-menu-icon' ).toggleClass( 'active' );
 	});
 
 	$(window).resize(function(){
@@ -36,5 +37,6 @@ jQuery(function( $ ){
 			$(this).parent().toggleClass("menu-open");
 		});
 	});
+	
 
 });

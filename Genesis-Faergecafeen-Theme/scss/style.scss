@@ -99,6 +99,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*
 - Media Queries
 	- Retina Display
+	- Max-width: 1920px
+*/
+	@import "1920";
+/*
+	- Max-width: 1440px
+*/
+	@import "1440";
+/*
 	- Max-width: 1200px
 */
 	@import "1200";
@@ -110,6 +118,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Max-width: 800px
 */
 	@import "800";
+/*
+	- Max-width: 600px
+*/
+	@import "600";
 /*
 - Print Styles
 */

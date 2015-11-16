@@ -4,6 +4,15 @@
 	.wrap {
 		max-width: 960px;
 	}
+	
+	.title-area {
+    	padding: 20px 0 20px;
+	}
+	
+	.site-title a, .site-title a:hover {
+    	width: 200px;
+    	height: 77px;
+	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
 	.sidebar-content-sidebar .content-sidebar-wrap,
@@ -11,8 +20,7 @@
 		@include structure(740, 960);
 	}
 
-	.content,
-	.site-header .widget-area {
+	.content{
 		@include structure(620, 960);
 	}
 
@@ -22,8 +30,7 @@
 		@include structure(400, 740);
 	}
 
-	.sidebar-primary,
-	.title-area {
+	.sidebar-primary {
 		@include structure(300, 960);
 	}
 	
@@ -37,8 +44,7 @@
 		@include structure(180, 960);
 	}
 
-	.sidebar-primary,
-	.title-area {
+	.sidebar-primary {
 		@include structure(300, 960);
 	}
 	

@@ -1284,6 +1284,21 @@ img.alignright,
 .genesis-nav-menu .menu-item.menu-item-language-current {
   display: none; }
 
+/* Responsive Menu
+--------------------------------------------- */
+.responsive-menu-icon {
+  cursor: pointer;
+  display: none;
+  margin-bottom: -1px;
+  text-align: center; }
+
+.responsive-menu-icon::before {
+  content: "\f333";
+  display: inline-block;
+  font: normal 20px/1 'dashicons';
+  margin: 0 auto;
+  padding: 10px; }
+
 /*
 - Content Area
 	- Entries
@@ -1519,6 +1534,17 @@ li.comment {
 /*
 - Media Queries
 	- Retina Display
+	- Max-width: 1920px
+*/
+@media only screen and (max-width: 1920px) {
+  /* # Site Navigation
+  ---------------------------------------------------------------------------------------------------- */
+  .genesis-nav-menu a {
+    padding: 20px 15px 15px; } }
+/*
+	- Max-width: 1440px
+*/
+/*
 	- Max-width: 1200px
 */
 @media only screen and (max-width: 1200px) {
@@ -1526,13 +1552,19 @@ li.comment {
   .wrap {
     max-width: 960px; }
 
+  .title-area {
+    padding: 20px 0 20px; }
+
+  .site-title a, .site-title a:hover {
+    width: 200px;
+    height: 77px; }
+
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,
   .sidebar-sidebar-content .content-sidebar-wrap {
     width: 77.0833333333%; }
 
-  .content,
-  .site-header .widget-area {
+  .content {
     width: 64.5833333333%; }
 
   .sidebar-content-sidebar .content,
@@ -1540,8 +1572,7 @@ li.comment {
   .content-sidebar-sidebar .content {
     width: 54.0540540541%; }
 
-  .sidebar-primary,
-  .title-area {
+  .sidebar-primary {
     width: 31.25%; }
 
   .sidebar-sidebar-content .sidebar-primary,
@@ -1552,8 +1583,7 @@ li.comment {
   .sidebar-secondary {
     width: 18.75%; }
 
-  .sidebar-primary,
-  .title-area {
+  .sidebar-primary {
     width: 31.25%; }
 
   .footer-widgets .widget-area {
@@ -1672,6 +1702,79 @@ li.comment {
 
   .sidebar .widget.enews-widget {
     padding: 40px; } }
+/*
+	- Max-width: 600px
+*/
+@media only screen and (max-width: 600px) {
+  .genesis-nav-menu.responsive-menu > .menu-item > .sub-menu,
+  .genesis-nav-menu.responsive-menu {
+    display: none; }
+
+  .genesis-nav-menu.responsive-menu .menu-item,
+  .responsive-menu-icon {
+    display: block; }
+
+  .genesis-nav-menu.responsive-menu .menu-item {
+    margin: 0; }
+
+  .genesis-nav-menu.responsive-menu .menu-item:hover {
+    position: static; }
+
+  .genesis-nav-menu.responsive-menu .current-menu-item > a,
+  .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+  .genesis-nav-menu.responsive-menu a,
+  .genesis-nav-menu.responsive-menu a:hover {
+    background: none;
+    line-height: 1;
+    padding: 16px 20px; }
+
+  .genesis-nav-menu.responsive-menu .menu-item-has-children {
+    cursor: pointer; }
+
+  .genesis-nav-menu.responsive-menu .menu-item-has-children > a {
+    margin-right: 60px; }
+
+  .genesis-nav-menu.responsive-menu > .menu-item-has-children:before {
+    content: "\f347";
+    float: right;
+    font: normal 16px/1 'dashicons';
+    height: 16px;
+    padding: 16px 20px;
+    right: 0;
+    text-align: right;
+    z-index: 9999; }
+
+  .genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before {
+    content: "\f343"; }
+
+  .genesis-nav-menu.responsive-menu .sub-menu {
+    border: none;
+    left: auto;
+    opacity: 1;
+    padding-left: 25px;
+    position: relative;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    width: 100%;
+    z-index: 99; }
+
+  .genesis-nav-menu.responsive-menu .sub-menu .sub-menu {
+    margin: 0; }
+
+  .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+  .genesis-nav-menu.responsive-menu .sub-menu li a,
+  .genesis-nav-menu.responsive-menu .sub-menu li a:hover {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    position: relative;
+    width: 100%; }
+
+  .nav-primary .genesis-nav-menu.responsive-menu {
+    padding-bottom: 16px; } }
 /*
 - Print Styles
 */
