@@ -211,7 +211,6 @@
 }
 
 .genesis-nav-menu .menu-item.menu-item-language-current {
-<<<<<<< HEAD
 	display:none;
 }
 
@@ -223,15 +222,25 @@
 	display: none;
 	margin-bottom: -1px;
 	text-align: center;
+	padding:10px;
+	float:right;
 }
-
+/*
 .responsive-menu-icon::before {
 	content: "\f333";
 	display: inline-block;
 	font: normal 20px/1 'dashicons';
 	margin: 0 auto;
 	padding: 10px;
-=======
-	/* display:none; */
->>>>>>> origin/master
+}
+*/
+.responsive-menu-icon .icon-bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 0.25em 0;
+    background-color: $color-primary-two;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
 }

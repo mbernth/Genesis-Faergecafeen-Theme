@@ -66,15 +66,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_800.scss": {
+	"\/_880.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_800.scss",
-		"outputAbbreviatedPath": "\/css\/_800.css",
+		"inputAbbreviatedPath": "\/_880.scss",
+		"outputAbbreviatedPath": "\/css\/_880.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

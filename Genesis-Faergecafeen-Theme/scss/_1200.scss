@@ -13,6 +13,12 @@
     	width: 200px;
     	height: 77px;
 	}
+	
+	.genesis-nav-menu {
+		@include font(1.4, 1.8);
+		letter-spacing:0.1rem;
+		font-weight:700;
+	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
 	.sidebar-content-sidebar .content-sidebar-wrap,
