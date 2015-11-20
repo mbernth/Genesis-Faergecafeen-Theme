@@ -65,6 +65,10 @@
 		display: block;
 	}
 	
+	.site-header .responsive-menu-icon {
+		margin-top:35px;
+	}
+	
 	.genesis-nav-menu.responsive-menu .menu-item {
 		margin: 0;
 	}
@@ -99,6 +103,7 @@
 		right: 0;
 		text-align: right;
 		z-index: 9999;
+		color:$color-primary-two;
 	}
 	
 	.genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before {

@@ -636,6 +636,7 @@ th {
 .site-inner,
 .wrap {
   margin: 0 auto;
+  width: 90%;
   max-width: 1200px; }
 
 .site-inner {
@@ -1475,7 +1476,6 @@ li.comment {
   line-height: 2.4rem; }
 
 .sidebar li {
-  border-bottom: 1px dotted #2d2a23;
   margin-bottom: 10px;
   padding-bottom: 10px; }
 
@@ -1484,9 +1484,7 @@ li.comment {
   margin-bottom: 0; }
 
 .sidebar .widget {
-  background-color: #f9f6ef;
-  margin-bottom: 40px;
-  padding: 40px; }
+  margin-bottom: 40px; }
 
 /*
 - Footer Widgets
@@ -1561,6 +1559,29 @@ li.comment {
 /*
 	- Max-width: 1440px
 */
+@media only screen and (max-width: 1440px) {
+  /* Site Header
+  -------------------------------------- */
+  .site-inner,
+  .wrap {
+    max-width: 1150px; }
+
+  .title-area {
+    padding: 20px 0 20px; }
+
+  .site-title a, .site-title a:hover {
+    width: 200px;
+    height: 77px; }
+
+  /* Structure layout
+  -------------------------------------- */
+  /* ### Content */
+  .content {
+    width: 66.9565217391%; }
+
+  /* ### Primary Sidebar */
+  .sidebar-primary {
+    width: 29.5652173913%; } }
 /*
 	- Max-width: 1200px
 */
@@ -1750,6 +1771,9 @@ li.comment {
   .responsive-menu-icon {
     display: block; }
 
+  .site-header .responsive-menu-icon {
+    margin-top: 35px; }
+
   .genesis-nav-menu.responsive-menu .menu-item {
     margin: 0; }
 
@@ -1778,7 +1802,8 @@ li.comment {
     padding: 16px 20px;
     right: 0;
     text-align: right;
-    z-index: 9999; }
+    z-index: 9999;
+    color: #e0d3b0; }
 
   .genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before {
     content: "\f343"; }
