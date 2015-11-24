@@ -78,11 +78,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "site_navigation";
 /*
 - Content Area
+	- Home Content
 	- Entries
 	- Entry Meta
 	- Pagination
 	- Comments
 */
+	@import "site_homepage";
 	@import "content_area";
 /*
 - Sidebars
