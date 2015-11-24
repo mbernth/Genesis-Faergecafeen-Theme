@@ -2,14 +2,16 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
+	color: $color-primary-two;
 	background-color: $color-primary-one;
+	@include font(1.6, 2.4);
 	clear: both;
 	padding: 100px 0;
 }
 
-.footer-widgets,
 .footer-widgets a {
-	color: $color-primary-one;
+	color: $color-primary-two;
+	text-decoration:none;
 }
 
 .footer-widgets input {
@@ -19,7 +21,8 @@
 .footer-widgets a.button,
 .footer-widgets a:hover,
 .footer-widgets a:focus {
-	color: $color-white;
+	color: $color-primary-two;
+	text-decoration: underline;
 }
 
 .footer-widgets li {

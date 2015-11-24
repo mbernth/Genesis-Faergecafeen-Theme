@@ -855,7 +855,12 @@ th {
   margin-bottom: 20px; }
 
 .footer-widgets .widget-title {
-  color: #f9f6ef; }
+  color: #e0d3b0;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 26px;
+  line-height: 2.6rem;
+  text-transform: uppercase; }
 
 /* ## WordPress
 --------------------------------------------- */
@@ -1540,13 +1545,18 @@ li.comment {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
+  color: #e0d3b0;
   background-color: #052e19;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  line-height: 2.4rem;
   clear: both;
   padding: 100px 0; }
 
-.footer-widgets,
 .footer-widgets a {
-  color: #052e19; }
+  color: #e0d3b0;
+  text-decoration: none; }
 
 .footer-widgets input {
   border: 1px solid #2d2a23; }
@@ -1554,7 +1564,8 @@ li.comment {
 .footer-widgets a.button,
 .footer-widgets a:hover,
 .footer-widgets a:focus {
-  color: #f9f6ef; }
+  color: #e0d3b0;
+  text-decoration: underline; }
 
 .footer-widgets li {
   border-bottom: 1px dotted #2d2a23;

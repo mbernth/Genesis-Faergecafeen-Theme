@@ -158,7 +158,9 @@
 }
 
 .footer-widgets .widget-title {
-	color: $color-white;
+	color: $color-primary-two;
+	@include font(1.8, 2.6);
+	text-transform:uppercase;
 }
 
 /* ## WordPress
