@@ -1,6 +1,26 @@
 .home-image .wrap {
 	text-align:center;
-	margin-top:250px;
+	margin-top:215px;
+	padding:60px 0;
 	color:$color-white;
 	max-width:960px;
+}
+
+.home-image .wrap h1{
+	@include font(6, 6.9);
+	color:$color-white;
+	text-shadow:3px 3px 6px rgba(45, 42, 35, 0.75);
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:0.2rem;
+	margin-bottom:30px;
+}
+
+.home-image .wrap p{
+	@include font(2.4, 3.3);
+	color:$color-white;
+	text-shadow:3px 3px 6px rgba(45, 42, 35, 0.75);
+	font-weight:400;
+	letter-spacing:0.2rem;
+	margin-bottom:30px;
 }
