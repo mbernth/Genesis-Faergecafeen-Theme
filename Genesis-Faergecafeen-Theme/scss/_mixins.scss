@@ -37,8 +37,8 @@ $color-secondary-two_rgb: rgb(215, 26, 68) ; /* Red */
 --------------------------------------------- */
 
 /* Primary Font Faminly */
-$font-bread: "capitolium-news-2",serif;;
-$font-headlines: "capitolium-news-2",serif;;
+$font-bread: "ff-celeste-web",serif;;
+$font-headlines: "ff-celeste-web",serif;;
 
 /* Basic Font Sizes mixin */
 @mixin font-size($sizeValue: 1.6) {

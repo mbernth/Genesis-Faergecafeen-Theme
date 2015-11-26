@@ -161,6 +161,8 @@
 	color: $color-primary-two;
 	@include font(1.8, 2.6);
 	text-transform:uppercase;
+	font-weight:800;
+	letter-spacing:0.2rem;
 }
 
 /* ## WordPress
