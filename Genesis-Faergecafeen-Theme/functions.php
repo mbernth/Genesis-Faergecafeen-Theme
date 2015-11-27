@@ -151,3 +151,35 @@ function featured_height() {
 		wp_enqueue_script( 'mono-featured-height', get_bloginfo( 'stylesheet_directory' ) . '/js/image.height.js', array( 'jquery' ), '1.0.0', true );
 	}
 }
+
+
+//* Add Event widget for ACF
+if ( ! class_exists( 'Example_Widget' ) ) {
+	class Example_Widget extends WP_Widget
+	{
+		function Example_Widget() 
+		{
+			parent::WP_Widget(false, "Example Widget");
+		}
+ 
+		function update($new_instance, $old_instance) 
+		{  
+			return $new_instance;  
+		}  
+ 
+		function form($instance)
+		{  
+			$title = esc_attr($instance["title"]);  
+			echo "<br />";
+		}
+ 
+		function widget($args, $instance) 
+		{
+			$widget_id = "widget_" . $args["widget_id"];
+ 
+			// I like to put the HTML output for the actual widget in a seperate file
+			include(realpath(dirname(__FILE__)) . "/example_widget.php");
+		}
+	}
+}
+register_widget("Example_Widget");
