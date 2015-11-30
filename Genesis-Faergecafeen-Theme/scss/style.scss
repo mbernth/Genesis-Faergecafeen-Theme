@@ -5,7 +5,7 @@ Description: This is a custom theme created for the Genesis Framework.
 Author: mono voce aps
 Author URI: http://www.monovoce.com/
 Template: genesis
-Template Version: 1.0.0
+Template Version: 1.0.1
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -39,8 +39,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Site Containers
 	- Column Widths and Positions
 	- Column Classes
+	- Site Grid
 */
 	@import "structure_layout";
+	@import "site_grid";
 /*
 - Common Classes
 	- Avatar

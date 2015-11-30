@@ -20,6 +20,12 @@ function crone_add_body_class( $classes ) {
    
 }
 
+//* Remove the entry title
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+
+//* Remove breadcrumbs
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
@@ -47,6 +53,224 @@ function top_image() {
 		echo '</div></div></div>';
 	}
 	
+}
+
+// Events and featured event
+add_action( 'genesis_entry_content', 'cafe_events', 1 );
+function cafe_events() {
+	$f_headline = get_field( 'headline', 'option' );  //featured headline
+	$f_image = get_field( 'udvalgt_event_billede', 'option' );  //featured image
+	$f_text = get_field( 'udvalgt_event_text', 'option' );  //featured text
+	$f_url = get_field( 'udvalgt_event_link', 'option' );  //Featured url
+	$hide = get_field( 'skjul_event', 'option' );  //featured headline
+	
+	echo '<div class="event-table">';
+	if ( $f_headline ) {
+		echo '<h2>' . $f_headline . '</h2>';
+	}
+	if( have_rows('event', 'option') ) {
+		echo '<table><tbody>';
+		
+		
+		while( have_rows('event', 'option') ): the_row();
+			if( have_rows('skjul_event') ){
+			}else{
+			echo '<tr>';
+				echo '<td><time itemprop="date" datetime="';
+						the_sub_field('dato');
+					echo '">';
+					the_sub_field('dato');
+					echo '</time>';
+				echo '</td>';
+				echo '<td>';
+					echo '<span itemprop="name"><a href="';
+					the_sub_field('event_link');
+					echo '">';
+					the_sub_field('event_navn');
+					echo '</a></span>';
+				echo '</td>';
+				echo '<td>';
+					echo '<a href="';
+					the_sub_field('billet');
+					echo '" class="button" target="_blank">';
+					echo 'Bestil';
+					echo '</a>';
+				echo '</td>';
+			echo '</tr>';
+			}
+		endwhile;
+		
+		echo '</table></tbody>';
+	}
+	echo '</div>';
+	echo '<div class="event-featured">';
+	if ( $f_image || $f_text || $f_url ) {
+		echo '<a href="' . $f_url . '">';
+		echo '<img src="' . $f_image . '">';
+		echo '</a>';
+		echo '<p>' . $f_text . '</p>';
+	}
+	echo '</div>';
+}
+
+// check if the flexible content field has rows of data
+add_action( 'genesis_after_entry_content', 'mono_flexible_gridset', 1 );
+function mono_flexible_gridset() {
+	
+	if( have_rows('content_rows') ):
+
+		// loop through the rows of data
+    	while ( have_rows('content_rows') ) : the_row();
+
+        	if( get_row_layout() == 'full_width_column' ):
+				
+				if (get_sub_field('hide')){
+					}else{
+					
+				if (get_sub_field('dark_background')){
+				echo '<div class="gridcontainer dark_background">';
+					}else{
+				echo '<div class="gridcontainer">';
+				}
+				
+				echo '<div class="wrap">';
+					echo '<div class="coll1">';
+						if ( get_sub_field('headline') ){
+							echo '<h2>';
+        					the_sub_field('headline');
+							echo '</h2>';
+						}else{
+						}
+						the_sub_field('content');
+					echo '</div>';
+				echo '</div>';
+				echo '</div>';
+				
+				}
+				
+        	elseif( get_row_layout() == 'two_columns' ):
+			
+				if (get_sub_field('hide')){
+					}else{
+						
+				if (get_sub_field('dark_background')){
+				echo '<div class="gridcontainer dark_background">';
+					}else{
+				echo '<div class="gridcontainer">';
+				}
+				
+				echo '<div class="wrap">';
+					echo '<div class="coll2">';
+						if ( get_sub_field('headline_left') ){
+							echo '<h2>';
+        					the_sub_field('headline_left');
+							echo '</h2>';
+						}else{
+						}
+						if ( get_sub_field('image_left') ){
+							echo '<img src="';
+        					the_sub_field('image_left');
+							echo '">';
+						}else{
+						}
+						the_sub_field('content_left');
+					echo '</div>';
+					echo '<div class="coll2">';
+						if ( get_sub_field('headline_right') ){
+							echo '<h2>';
+        					the_sub_field('headline_right');
+							echo '</h2>';
+						}else{
+						}
+						if ( get_sub_field('image_right') ){
+							echo '<img src="';
+        					the_sub_field('image_right');
+							echo '">';
+						}else{
+						}
+						the_sub_field('content_right');
+					echo '</div>';
+				echo '</div>';
+				echo '</div>';
+				
+				}
+				
+			elseif( get_row_layout() == 'Three Columns' ):
+				
+				if (get_sub_field('hide')){
+					}else{
+						
+				if (get_sub_field('dark_background')){
+				echo '<div class="gridcontainer dark_background">';
+					}else{
+				echo '<div class="gridcontainer">';
+				}
+				
+				echo '<div class="wrap">';
+					echo '<div class="coll3">';
+        				the_sub_field('headline_left_3');
+					echo '</div>';
+					echo '<div class="coll3">';
+						the_sub_field('headline_center');
+					echo '</div>';
+					echo '<div class="coll3">';
+						the_sub_field('headline_right_3');
+					echo '</div>';
+				echo '</div>';
+				echo '</div>';
+				
+				}
+				
+			elseif( get_row_layout() == 'four_columns' ):
+			
+				if (get_sub_field('hide')){
+					}else{
+						
+				if (get_sub_field('dark_background')){
+				echo '<div class="gridcontainer dark_background">';
+					}else{
+				echo '<div class="gridcontainer">';
+				}
+
+				echo '<div class="wrap">';
+					echo '<div class="coll4">';
+        				the_sub_field('gridset_4_1');
+					echo '</div>';
+					echo '<div class="coll4">';
+						the_sub_field('gridset_4_2');
+					echo '</div>';
+					echo '<div class="coll4">';
+						the_sub_field('gridset_4_3');
+					echo '</div>';
+					echo '<div class="coll4">';
+						the_sub_field('gridset_4_4');
+					echo '</div>';
+				echo '</div>';
+				echo '</div>';
+				}
+				
+			elseif( get_row_layout() == 'full_width_area' ):
+				
+				if (get_sub_field('hide')){
+					}else{
+				echo '<div class="gridcontainer">';
+				}
+					echo '<div class="coll1">';
+						the_sub_field('full_width');
+					echo '</div>';
+				echo '</div>';
+				
+				
+        	endif;
+
+    	endwhile;
+
+	else :
+
+    // no layouts found
+
+	endif;
+
 }
 
 

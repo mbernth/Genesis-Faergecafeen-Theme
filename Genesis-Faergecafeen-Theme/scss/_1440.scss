@@ -1,33 +1,54 @@
 @media only screen and (max-width: 1440px) {
 	
 	/* Site Header
-	-------------------------------------- */
-	
-	.site-inner,
-	.wrap {
-		max-width: 1150px;
-	}
-	
+  	-------------------------------------- */
+  	.site-inner,
+  	.wrap {
+    	max-width: 1150px; }
+
 	.title-area {
-    	padding: 20px 0 20px;
-	}
-	
+    	padding: 20px 0 20px; }
+
 	.site-title a, .site-title a:hover {
     	width: 200px;
-    	height: 77px;
-	}
-	
-	/* Structure layout
-	-------------------------------------- */
-	
-	/* ### Content */
-	.content {
-		@include structure(770, 1150);
+    	height: 77px; }
+
+  	/* Structure layout
+  	-------------------------------------- */
+  	/* ### Content */
+  	.content {
+    	@include structure(770, 1150); 
 	}
 
-	/* ### Primary Sidebar */
-	.sidebar-primary {
-		@include structure(340, 1150);
+  	/* ### Primary Sidebar */
+  	.sidebar-primary {
+    	@include structure(340, 1150); 
 	}
+
+  	/* Home page layout
+  	-------------------------------------- */
+  	.home-image .wrap {
+   		margin-top: 145px;
+   		padding: 40px 0;
+    	max-width: 768px; }
+
+  	.home-image .wrap h1 {
+	 	@include font(4.6, 4.6);
+    	margin-bottom: 20px; }
+
+  	.home-image .wrap p {
+	 	@include font(2, 2.2);
+    	margin-bottom: 20px; }
+
+  	.home.full-width-content .content .entry-content {
+    	max-width: 1150px; }
+
+  	/* ### event */
+  	.event-table {
+    	@include structure(770, 1150); }
+
+  	/* ### featured event */
+  	.event-featured {
+    	@include structure(340, 1150); }
 
 }
