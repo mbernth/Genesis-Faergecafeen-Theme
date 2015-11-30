@@ -57,8 +57,43 @@
 	.footer-widgets .widget-area {
 		display:block;
 		float:left;
-		@include grid(3, 30, 1200);
+		@include grid(3, 30, 960);
 	}
 
-
+	/* Grid
+	-------------------------------------- */
+	
+	.coll2 {
+		@include grid(2, 30, 960);
+	}
+	.coll3 {
+		@include grid(3, 30, 960);
+	}
+	.coll4 {
+		@include grid(4, 30, 960);
+	}
+	.coll5 {
+		@include grid(5, 30, 960);
+	}
+	.coll6 {
+		@include grid(6, 30, 960);
+	}
+	.coll7 {
+		@include grid(7, 30, 960);
+	}
+	.coll8 {
+		@include grid(8, 30, 960);
+	}
+	.coll9 {
+		@include grid(9, 30, 960);
+	}
+	.coll10 {
+		@include grid(10, 30, 960);
+	}
+	.coll11 {
+		@include grid(11, 30, 960);
+	}
+	.coll12 {
+		@include grid(12, 30, 960);
+	}
 }

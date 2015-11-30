@@ -1,0 +1,9 @@
+@media only screen and (max-width: 480px) {
+	
+	/* ## Home header
+	--------------------------------------------- */
+	.home-image .wrap h1 {
+  		@include font(2.8, 2.8);
+  		margin-bottom: 10px; 
+	}
+}

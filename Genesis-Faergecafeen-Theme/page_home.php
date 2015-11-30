@@ -49,8 +49,19 @@ function top_image() {
 		echo '<div class="gradient"><div class="wrap">';
 		echo '<h1>' . $headline . '</h1>';
 		echo '' . $text . '';
-		echo '<a href="' . $button_url . '" class="button" target="_blank">' . $button_text . '</a>';
+		if ( ! wp_is_mobile() ) {
+			echo '<a href="#" data-display="box-top" class="button">' . $button_text . '</a>';
+		}else{
+			echo '<a href="' . $button_url . '" class="button" target="_blank">' . $button_text . '</a>';
+		}
 		echo '</div></div></div>';
+		if ( ! wp_is_mobile() ) {
+			echo '<span id="box-top" class="portBox">';
+			echo '<iframe  height="540" width="1080" scrolling="auto" frameborder="0" src="' . $button_url . '"></iframe>';
+			echo '</span>';
+		}else{
+		
+		}
 	}
 	
 }
@@ -92,7 +103,7 @@ function cafe_events() {
 				echo '<td>';
 					echo '<a href="';
 					the_sub_field('billet');
-					echo '" class="button" target="_blank">';
+					echo '" class="button" target="_blank" data-display="box_top">';
 					echo 'Bestil';
 					echo '</a>';
 				echo '</td>';

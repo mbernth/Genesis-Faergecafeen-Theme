@@ -4,6 +4,11 @@
 	.wrap {
 		max-width: 800px;
 	}
+	
+	.site-title a, .site-title a:hover {
+    	width: 170px;
+    	height: 65px;
+	}
 
 	.content,
 	.content-sidebar-sidebar .content,
@@ -24,6 +29,14 @@
 	}
 	.footer-widgets .widget-area {
 		@include grid(1, 0, 800);
+		border-bottom:1px solid $color-primary-two;
+		margin-bottom:20px;
+		padding-bottom:20px;
+	}
+	.footer-widgets .widget-area:last-child{
+		border-bottom:none;
+		margin-bottom:0;
+		padding-bottom:0;
 	}
 
 	.header-image .site-title > a {
@@ -66,6 +79,43 @@
 
 	.footer-widgets-1 {
 		margin-right: 0;
+	}
+	
+	/* Grid
+	-------------------------------------- */
+	
+	.coll2 {
+		@include grid(2, 20, 800);
+	}
+	.coll3 {
+		@include grid(3, 20, 800);
+	}
+	.coll4 {
+		@include grid(4, 20, 800);
+	}
+	.coll5 {
+		@include grid(5, 20, 800);
+	}
+	.coll6 {
+		@include grid(6, 20, 800);
+	}
+	.coll7 {
+		@include grid(7, 20, 800);
+	}
+	.coll8 {
+		@include grid(8, 20, 800);
+	}
+	.coll9 {
+		@include grid(9, 20, 800);
+	}
+	.coll10 {
+		@include grid(10, 20, 800);
+	}
+	.coll11 {
+		@include grid(11, 20, 800);
+	}
+	.coll12 {
+		@include grid(12, 20, 800);
 	}
 
 }

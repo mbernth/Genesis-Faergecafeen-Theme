@@ -10,8 +10,8 @@ define( 'CHILD_THEME_NAME', 'Genesis Mono Basics' );
 define( 'CHILD_THEME_URL', 'http://www.monovoce.com/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
-
-
+//* Remove the edit link
+add_filter ( 'genesis_edit_post_link' , '__return_false' );	
 
 //* Header settings
 //* ==============================================================================================================================
@@ -183,3 +183,13 @@ if ( ! class_exists( 'Example_Widget' ) ) {
 	}
 }
 register_widget("Example_Widget");
+
+//* Script for pop up booking box
+add_action( 'wp_enqueue_scripts', 'portbox_enqueue_scripts_styles' );
+function portbox_enqueue_scripts_styles() {
+	
+	wp_enqueue_script( 'parallax-portbox-jquery', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-1.10.2.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'parallax-portbox-ui', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-ui-1.10.3.custom.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'parallax-portbox-slimscroll', get_bloginfo( 'stylesheet_directory' ) . '/js/portBox.slimscroll.min.js', array( 'jquery' ), '1.0.0' );
+
+}

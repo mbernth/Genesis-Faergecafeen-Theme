@@ -65,3 +65,62 @@
 	color: $color-black;
 	outline: #ccc solid 1px;
 }
+
+/* PortBox CSS
+---------------------------------------------------------------------------------------------------- */
+.portBox-overlay {  
+	height: 100%;
+	width: 100%;
+	background: $color-primary-one;
+	opacity: 0.45;
+	filter: alpha(opacity=45);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+}
+
+.portBox {
+	max-width:610px;
+	position: absolute;
+	display:none;
+	background: $color-white;
+	z-index: 1001;
+	padding: 20px;
+	text-align:left;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+	-box-shadow: 0 0 10px rgba(0,0,0,.2);
+	min-width:200px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.close-portBox{
+	font-size: 20px;
+	line-height: .5;
+	position: absolute;
+	top: -6px;
+	right: -7px;
+	color: $color-white !important;
+	text-shadow:none;
+	font-weight:bold;
+	cursor: pointer;
+	border-radius:50%;
+	padding:5px;
+	background-color: $color-primary-one !important;
+	overflow:visible;
+	border:2px solid $color-background !important;
+	text-decoration:none;
+}
+
+.close-portBox:hover{
+	color: $color-primary-one !important;
+	background-color:$color-background !important;
+	border:2px solid $color-primary-one !important;	
+}
