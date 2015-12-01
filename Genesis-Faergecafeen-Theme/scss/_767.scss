@@ -78,4 +78,17 @@
   		font-style: italic;
   		@include font(1.6, 1.8);
 	}
+	
+	/* ## Home gridset
+	--------------------------------------------- */
+	.dark_background .coll2 {
+		padding-bottom:30px;
+		margin-bottom:30px;
+		border-bottom:1px solid $color-primary-two;
+	}
+	.dark_background .coll2:last-child {
+		padding-bottom:0px;
+		margin-bottom:0px;
+		border-bottom: none;
+	}
 }

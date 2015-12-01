@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Set Localization (do not remove)
-load_child_theme_textdomain( 'mono', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'mono' ) );
+load_child_theme_textdomain( 'faergecafe', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'faergecafe' ) );
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Genesis Mono Basics' );
@@ -193,3 +193,18 @@ function portbox_enqueue_scripts_styles() {
 	wp_enqueue_script( 'parallax-portbox-slimscroll', get_bloginfo( 'stylesheet_directory' ) . '/js/portBox.slimscroll.min.js', array( 'jquery' ), '1.0.0' );
 
 }
+
+// Sounds
+function faergecafeen_scripts() {
+	
+	wp_enqueue_script( 'sounds', get_bloginfo( 'stylesheet_directory' ) . '/js/sounds.js', array( 'jquery' ), '1.0.0' );
+	$jsLocalized = array(
+		'audioPlay'        => __( 'Hear the sound of Færgecaféen', 'faergecafeen' ),
+		'audioPause'       => __( 'Turn sound off', 'faergecafeen' ),
+		'adudioFade'       => __( 'Fading . . .', 'faergecafeen' )
+	);
+	wp_localize_script( 'sounds', 'jsLocalized', $jsLocalized );
+	
+	
+}
+add_action( 'wp_enqueue_scripts', 'faergecafeen_scripts' );

@@ -117,5 +117,13 @@
 	.coll12 {
 		@include grid(12, 20, 800);
 	}
+	
+	/* Instagram feed CSS
+	---------------------------------------------------------------------------------------------------- */
+	
+	#sb_instagram.sbi_col_3 #sbi_images .sbi_item {
+		@include instagrid(3, 20, 437);
+		margin-bottom:20px !important;
+	}
 
 }

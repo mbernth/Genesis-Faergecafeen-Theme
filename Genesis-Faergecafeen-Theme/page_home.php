@@ -147,7 +147,7 @@ function mono_flexible_gridset() {
 				echo '<div class="wrap">';
 					echo '<div class="coll1">';
 						if ( get_sub_field('headline') ){
-							echo '<h2>';
+							echo '<h2 class="entry-title">';
         					the_sub_field('headline');
 							echo '</h2>';
 						}else{
@@ -173,7 +173,7 @@ function mono_flexible_gridset() {
 				echo '<div class="wrap">';
 					echo '<div class="coll2">';
 						if ( get_sub_field('headline_left') ){
-							echo '<h2>';
+							echo '<h2 class="entry-title">';
         					the_sub_field('headline_left');
 							echo '</h2>';
 						}else{
@@ -188,7 +188,7 @@ function mono_flexible_gridset() {
 					echo '</div>';
 					echo '<div class="coll2">';
 						if ( get_sub_field('headline_right') ){
-							echo '<h2>';
+							echo '<h2 class="entry-title">';
         					the_sub_field('headline_right');
 							echo '</h2>';
 						}else{

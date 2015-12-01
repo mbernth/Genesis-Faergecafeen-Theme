@@ -105,6 +105,17 @@ p.standard {
   }
 }
 
+@mixin instagrid($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%) !important;
+  }
+  &:nth-child(#{$colls}n) {
+    margin-right: 0 !important;
+  }
+}
+
+
 @mixin structure($width, $target) {
 	width: ($width / $target * 100%);
 }

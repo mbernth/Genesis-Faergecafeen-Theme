@@ -140,6 +140,7 @@
 
 .entry-title {
 	@include font(3.6, 3.6);
+	margin-bottom:30px;
 }
 
 .entry-title a,
@@ -164,6 +165,11 @@
 	font-weight:800;
 	letter-spacing:0.2rem;
 }
+
+.gridcontainer [class*="coll"] .entry-title{
+	margin-bottom:30px;
+}
+
 
 /* ## WordPress
 --------------------------------------------- */

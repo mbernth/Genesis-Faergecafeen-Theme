@@ -124,3 +124,50 @@
 	background-color:$color-background !important;
 	border:2px solid $color-primary-one !important;	
 }
+
+/* Instagram feed CSS
+---------------------------------------------------------------------------------------------------- */
+#sbi_images {
+	padding:0 !important;
+}
+#sb_instagram.sbi_col_3 #sbi_images .sbi_item {
+	@include instagrid(3, 40, 580);
+	margin-bottom:40px !important;
+}
+
+#sb_instagram #sbi_load .sbi_load_btn, 
+#sb_instagram .sbi_follow_btn a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    padding: 16px 24px;
+    margin: 5px auto 0 auto;
+    background: $color-secondary-one;
+    color: $color-primary-two;
+    border: none;
+    color: $color-primary-two;
+    text-decoration: none;
+    @include font(1.8, 1.8);
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#sb_instagram .sbi_follow_btn a {
+    background: $color-secondary-one;
+    color: $color-primary-two;
+}
+
+/* Sounds
+---------------------------------------------------------------------------------------------------- */
+#audiocontrols {
+    background: url(images/sounds.png) 0 0 no-repeat;
+    height: 56px;
+    padding: 25px 0 0 80px;
+    margin: 20px 0 5px 0;
+    line-height: 1.1;
+    cursor: pointer;
+}
