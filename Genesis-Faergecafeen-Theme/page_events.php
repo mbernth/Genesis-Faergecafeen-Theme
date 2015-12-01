@@ -26,14 +26,87 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
-/* check if the flexible content field has rows of data
-add_action( 'genesis_after_entry_content', 'mono_flexible_gridset', 1 );
-function mono_flexible_gridset() {
+// Events and featured event
+add_action( 'genesis_after_entry', 'cafe_events', 15 );
+function cafe_events() {
+	$f_headline = get_field( 'headline', 'option' );  //featured headline
+	$f_image = get_field( 'udvalgt_event_billede', 'option' );  //featured image
+	$f_text = get_field( 'udvalgt_event_text', 'option' );  //featured text
+	$f_url = get_field( 'udvalgt_event_link', 'option' );  //Featured url
+	$hide = get_field( 'skjul_event', 'option' );  //featured headline
 	
-	if( have_rows('content_rows') ):
+	echo '<aside class="event-table">';
+	if ( $f_headline ) {
+		echo '<h2>' . $f_headline . '</h2>';
+	}
+	if( have_rows('event', 'option') ) {
+		echo '<table><tbody>';
+		
+		
+		while( have_rows('event', 'option') ): the_row();
+			if( have_rows('skjul_event') ){
+			}else{
+			echo '<tr>';
+				echo '<td><time itemprop="date" datetime="';
+						the_sub_field('dato');
+					echo '">';
+					the_sub_field('dato');
+					echo '</time>';
+				echo '</td>';
+				echo '<td>';
+					echo '<span itemprop="name"><a href="';
+					the_sub_field('event_link');
+					echo '">';
+					the_sub_field('event_navn');
+					echo '</a></span>';
+				echo '</td>';
+				echo '<td>';
+					echo '<a href="';
+					the_sub_field('billet');
+					echo '" class="button" target="_blank">';
+					echo 'Bestil';
+					echo '</a>';
+				echo '</td>';
+			echo '</tr>';
+			}
+		endwhile;
+		
+		echo '</table></tbody>';
+	}
+	echo '</aside>';
+}
+
+//* check if the flexible content field has rows of data
+add_action( 'genesis_before_footer', 'mono_repeater_events', 5 );
+function mono_repeater_events() {
+	$titel = get_field( 'titel');
+	$picture = get_field( 'picture');
+	$short_text = get_field( 'short_text');
+	$page_link_text = get_field( 'page_link_text');
+	$page_link = get_field( 'page_link');
+	$booking_button_text = get_field( 'booking_button_text');
+	$booking_url = get_field( 'booking_url');
+	
+	echo '<div class="gridcontainer dark_background">
+			<div class="wrap">';
+				if( have_rows('event_preview') ) {
+					echo '<div class="coll2">';
+						echo '<h2>' . $titel . '</h2>';
+					echo '</div>';
+				}
+	echo '	</div>
+		  </div>';
+}
+
+
+//* check if the flexible content field has rows of data
+add_action( 'genesis_before_footer', 'mono_flexible_gridset_events', 5 );
+function mono_flexible_gridset_events() {
+	
+	if( have_rows('content_events') ):
 
 		// loop through the rows of data
-    	while ( have_rows('content_rows') ) : the_row();
+    	while ( have_rows('content_events') ) : the_row();
 
         	if( get_row_layout() == 'full_width_column' ):
 				
@@ -121,13 +194,49 @@ function mono_flexible_gridset() {
 				
 				echo '<div class="wrap">';
 					echo '<div class="coll3">';
-        				the_sub_field('headline_left_3');
+        				if ( get_sub_field('headline_left') ){
+							echo '<h2 class="entry-title">';
+        					the_sub_field('headline_left');
+							echo '</h2>';
+						}else{
+						}
+						if ( get_sub_field('image_left') ){
+							echo '<img src="';
+        					the_sub_field('image_left');
+							echo '">';
+						}else{
+						}
+						the_sub_field('content_left');
 					echo '</div>';
 					echo '<div class="coll3">';
-						the_sub_field('headline_center');
+						if ( get_sub_field('headline_center') ){
+							echo '<h2 class="entry-title">';
+        					the_sub_field('headline_center');
+							echo '</h2>';
+						}else{
+						}
+						if ( get_sub_field('image_center') ){
+							echo '<img src="';
+        					the_sub_field('image_center');
+							echo '">';
+						}else{
+						}
+						the_sub_field('content_center');
 					echo '</div>';
 					echo '<div class="coll3">';
-						the_sub_field('headline_right_3');
+						if ( get_sub_field('headline_right') ){
+							echo '<h2 class="entry-title">';
+        					the_sub_field('headline_right');
+							echo '</h2>';
+						}else{
+						}
+						if ( get_sub_field('image_right') ){
+							echo '<img src="';
+        					the_sub_field('image_right');
+							echo '">';
+						}else{
+						}
+						the_sub_field('content_right');
 					echo '</div>';
 				echo '</div>';
 				echo '</div>';
@@ -185,7 +294,7 @@ function mono_flexible_gridset() {
 	endif;
 
 }
-*/
+
 
 
 //* Run the Genesis loop
