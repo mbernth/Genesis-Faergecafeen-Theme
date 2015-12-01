@@ -103,7 +103,7 @@ function cafe_events() {
 				echo '<td>';
 					echo '<a href="';
 					the_sub_field('billet');
-					echo '" class="button" target="_blank" data-display="box_top">';
+					echo '" class="button" target="_blank">';
 					echo 'Bestil';
 					echo '</a>';
 				echo '</td>';
@@ -206,7 +206,7 @@ function mono_flexible_gridset() {
 				
 				}
 				
-			elseif( get_row_layout() == 'Three Columns' ):
+			elseif( get_row_layout() == 'three_columns' ):
 				
 				if (get_sub_field('hide')){
 					}else{

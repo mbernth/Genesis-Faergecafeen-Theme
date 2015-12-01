@@ -184,6 +184,52 @@ if ( ! class_exists( 'Example_Widget' ) ) {
 }
 register_widget("Example_Widget");
 
+// Add events option page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Arrangementer',
+		'menu_title'	=> 'Arrangementers'
+	));
+}
+
+//* Add events to sidebar
+add_action( 'genesis_before_sidebar_widget_area', 'mono_sidebar_event' );
+function mono_sidebar_event() {
+	$f_headline = get_field( 'headline', 'option' );  //featured headline
+	$f_text = get_field( 'udvalgt_event_text', 'option' );  //featured text
+	$f_url = get_field( 'udvalgt_event_link', 'option' );  //Featured url
+	$hide = get_field( 'skjul_event', 'option' );  //featured headline
+	if ( $f_headline ) {
+		echo '<h2>' . $f_headline . '</h2>';
+	}
+	if( have_rows('event', 'option') ) {
+		echo '<table><tbody>';
+		
+		while( have_rows('event', 'option') ): the_row();
+			if( have_rows('skjul_event') ){
+			}else{
+			echo '<tr>';
+				echo '<td><time itemprop="date" datetime="';
+						the_sub_field('dato');
+					echo '">';
+					the_sub_field('dato');
+					echo '</time>';
+				echo '</td>';
+				echo '<td>';
+					echo '<span itemprop="name"><a href="';
+					the_sub_field('event_link');
+					echo '">';
+					the_sub_field('event_navn');
+					echo '</a></span>';
+				echo '</td>';
+			echo '</tr>';
+			}
+		endwhile;
+		
+		echo '</table></tbody>';
+	}
+}
+
 //* Script for pop up booking box
 add_action( 'wp_enqueue_scripts', 'portbox_enqueue_scripts_styles' );
 function portbox_enqueue_scripts_styles() {
@@ -194,10 +240,12 @@ function portbox_enqueue_scripts_styles() {
 
 }
 
-// Sounds
+// Add sounds to footer
+add_action( 'wp_enqueue_scripts', 'faergecafeen_scripts' );
 function faergecafeen_scripts() {
 	
 	wp_enqueue_script( 'sounds', get_bloginfo( 'stylesheet_directory' ) . '/js/sounds.js', array( 'jquery' ), '1.0.0' );
+	
 	$jsLocalized = array(
 		'audioPlay'        => __( 'Hear the sound of Færgecaféen', 'faergecafeen' ),
 		'audioPause'       => __( 'Turn sound off', 'faergecafeen' ),
@@ -207,4 +255,3 @@ function faergecafeen_scripts() {
 	
 	
 }
-add_action( 'wp_enqueue_scripts', 'faergecafeen_scripts' );
