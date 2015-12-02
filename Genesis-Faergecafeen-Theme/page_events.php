@@ -79,23 +79,34 @@ function cafe_events() {
 //* check if the flexible content field has rows of data
 add_action( 'genesis_before_footer', 'mono_repeater_events', 5 );
 function mono_repeater_events() {
-	$titel = get_field( 'titel');
-	$picture = get_field( 'picture');
-	$short_text = get_field( 'short_text');
-	$page_link_text = get_field( 'page_link_text');
-	$page_link = get_field( 'page_link');
-	$booking_button_text = get_field( 'booking_button_text');
-	$booking_url = get_field( 'booking_url');
+	$events = get_field('event_preview');
 	
-	echo '<div class="gridcontainer dark_background">
-			<div class="wrap">';
-				if( have_rows('event_preview') ) {
-					echo '<div class="coll2">';
-						echo '<h2>' . $titel . '</h2>';
+	if($events) {
+		echo '<div class="gridcontainer dark_background event_list">
+				<div class="wrap">';
+		foreach($events as $event ) {
+					echo '<div class="coll3">';
+						if( $event['titel']){
+							echo '<h2>' . $event['titel']. '</h2>';
+						}
+						if( $event['picture']){
+							echo '<img src="' . $event['picture']. '">';
+						}
+						if( $event['short_text']){
+							echo '<div class="event_text">' . $event['short_text']. '</div>';
+						}
+						if( $event['page_link']){
+							echo '<a href="' . $event['page_link']. '" class="button event_btn">' . $event['page_link_text']. '</a>';
+						}
+						if( $event['booking_url']){
+							echo '<a href="' . $event['booking_url']. '" class="button booking_btn" target="_blank">' . $event['booking_button_text']. '</a>';
+						}
 					echo '</div>';
-				}
-	echo '	</div>
-		  </div>';
+		}
+		echo '	</div>
+		  	  </div>';
+	}
+	
 }
 
 

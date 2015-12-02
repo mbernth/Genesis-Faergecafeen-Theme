@@ -44,3 +44,32 @@
 	float:left;
 	@include grid(3, 60, 1200);
 }
+
+/* ### Simple Social */
+.simple-social-icons ul li {
+	margin-left:0 !important;
+	margin-right:10px !important;
+}
+
+/* ### Tripadvisor */
+.tripadvisor {
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+.tripadvisor a{
+	background: url(images/trip_01.png) no-repeat center center;
+	display:block;
+	background-color: #e0d3b0 !important;
+    border-radius: 0px;
+    color: #5a5446 !important;
+    border: 0px #ffffff solid !important;
+    height: 44px;
+    width: 44px;
+	text-indent: -999em;
+	text-decoration:none;
+}
+.tripadvisor a:hover{
+	background: url(images/trip_02.png) no-repeat center center;
+	background-color: #5a5446 !important;
+}

@@ -32,4 +32,14 @@
     	text-align: center;
 	}
 	
+	/* Home page layout
+  	-------------------------------------- */
+	.events .gridcontainer.event_list .coll3 {
+		@include grid(1, 0, 600);
+	}
+	
+	.event_text {
+    	height: 90px;
+	}
+	
 }

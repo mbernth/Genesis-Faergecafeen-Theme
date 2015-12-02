@@ -87,5 +87,17 @@
   	/* ### featured event */
   	.event-featured {
     	@include structure(340, 1150); }
+	
+	/* Home page layout
+  	-------------------------------------- */
+	.events .event-table {
+  		float: right;
+  		@include structure(555, 1150); 
+	}
+	
+	.events article.entry {
+		float: left;
+  		@include structure(555, 1150); 
+	}
 
 }

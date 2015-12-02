@@ -125,5 +125,34 @@
 		@include instagrid(3, 20, 437);
 		margin-bottom:20px !important;
 	}
+	
+	/* Home page layout
+  	-------------------------------------- */
+	.events .event-table {
+  		float: left;
+		width:100%; 
+	}
+	
+	.events article.entry {
+		float: left;
+  		width:100%;  
+	}
+	
+	.events .gridcontainer.event_list .coll3 {
+		@include grid(2, 40, 800);
+	}
+	
+	/* Menu page layout
+  	-------------------------------------- */
+	.menu .entry-content .gridcontainer:last-child {
+		padding-bottom:40px;
+		margin-bottom:40px;
+		border-bottom:1px solid $color-primary-two;
+	}
+	
+	.menu .entry-content .gridcontainer.recomended .coll1 {
+		padding:20px;
+	}
+
 
 }

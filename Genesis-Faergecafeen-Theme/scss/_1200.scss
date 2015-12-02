@@ -104,4 +104,16 @@
 		@include instagrid(3, 30, 465);
 		margin-bottom:30px !important;
 	}
+	
+	/* Home page layout
+  	-------------------------------------- */
+	.events .event-table {
+  		float: right;
+  		@include structure(465, 960); 
+	}
+	
+	.events article.entry {
+		float: left;
+  		@include structure(465, 960); 
+	}
 }

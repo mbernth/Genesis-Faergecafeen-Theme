@@ -153,13 +153,13 @@ function featured_height() {
 }
 
 
-//* Add Event widget for ACF
+//* Add Booking widget for ACF
 if ( ! class_exists( 'Example_Widget' ) ) {
 	class Example_Widget extends WP_Widget
 	{
 		function Example_Widget() 
 		{
-			parent::WP_Widget(false, "Example Widget");
+			parent::WP_Widget(false, "Booking Widget");
 		}
  
 		function update($new_instance, $old_instance) 
@@ -184,6 +184,37 @@ if ( ! class_exists( 'Example_Widget' ) ) {
 }
 register_widget("Example_Widget");
 
+//* Add tripadvisor widget for ACF
+if ( ! class_exists( 'Tripadvisor_Widget' ) ) {
+	class Tripadvisor_Widget extends WP_Widget
+	{
+		function Tripadvisor_Widget() 
+		{
+			parent::WP_Widget(false, "Tripadvisor Widget");
+		}
+ 
+		function update($new_instance, $old_instance) 
+		{  
+			return $new_instance;  
+		}  
+ 
+		function form($instance)
+		{  
+			$title = esc_attr($instance["title"]);  
+			echo "<br />";
+		}
+ 
+		function widget($args, $instance) 
+		{
+			$widget_id = "widget_" . $args["widget_id"];
+ 
+			// I like to put the HTML output for the actual widget in a seperate file
+			include(realpath(dirname(__FILE__)) . "/tripadvisor_widget.php");
+		}
+	}
+}
+register_widget("Tripadvisor_Widget");
+
 // Add events option page
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
@@ -199,6 +230,8 @@ function mono_sidebar_event() {
 	$f_text = get_field( 'udvalgt_event_text', 'option' );  //featured text
 	$f_url = get_field( 'udvalgt_event_link', 'option' );  //Featured url
 	$hide = get_field( 'skjul_event', 'option' );  //featured headline
+	
+	echo '<div class="event-table">';
 	if ( $f_headline ) {
 		echo '<h2>' . $f_headline . '</h2>';
 	}
@@ -228,6 +261,8 @@ function mono_sidebar_event() {
 		
 		echo '</table></tbody>';
 	}
+	echo '</div>';
+	
 }
 
 //* Script for pop up booking box
@@ -254,4 +289,73 @@ function faergecafeen_scripts() {
 	wp_localize_script( 'sounds', 'jsLocalized', $jsLocalized );
 	
 	
+}
+
+
+// check if the flexible content field has rows of data
+add_action( 'genesis_entry_content', 'mono_default_gridset', 15 );
+function mono_default_gridset() {
+	if ( is_single() || is_page() ) {
+		
+	if( have_rows('extra_content') ):
+
+		// loop through the rows of data
+    	while ( have_rows('extra_content') ) : the_row();
+
+        	if( get_row_layout() == 'full_width_column' ):
+				
+				if (get_sub_field('hide')){
+					}else{
+				echo '<div class="gridcontainer">';
+					echo '<div class="coll1">';
+						the_sub_field('content');
+					echo '</div>';
+				echo '</div>';
+				
+				}
+				
+        	elseif( get_row_layout() == 'two_columns' ):
+			
+				if (get_sub_field('hide')){
+					}else{
+				echo '<div class="gridcontainer">';
+					echo '<div class="coll2">';
+						the_sub_field('content_left');
+					echo '</div>';
+					echo '<div class="coll2">';
+						the_sub_field('content_right');
+					echo '</div>';
+				echo '</div>';
+				
+				}
+				
+			elseif( get_row_layout() == 'three_columns' ):
+				
+				if (get_sub_field('hide')){
+					}else{
+				echo '<div class="gridcontainer">';
+					echo '<div class="coll3">';
+        				the_sub_field('headline_left');
+					echo '</div>';
+					echo '<div class="coll3">';
+						the_sub_field('headline_center');
+					echo '</div>';
+					echo '<div class="coll3">';
+						the_sub_field('headline_right');
+					echo '</div>';
+				echo '</div>';
+				
+				}
+				
+				
+        	endif;
+
+    	endwhile;
+
+	else :
+
+    // no layouts found
+
+	endif;
+	}
 }

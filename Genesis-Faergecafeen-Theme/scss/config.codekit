@@ -178,6 +178,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_events.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_events.scss",
+		"outputAbbreviatedPath": "\/css\/_events.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_footer_widgets.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -187,6 +203,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_footer_widgets.scss",
 		"outputAbbreviatedPath": "\/css\/_footer_widgets.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_menu.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_menu.scss",
+		"outputAbbreviatedPath": "\/css\/_menu.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -414,7 +446,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Yukyung Jin",
+"lastSavedByUser": "Michael Bernth",
 "manualImportLinks": {
 	},
 "projectAttributes": {

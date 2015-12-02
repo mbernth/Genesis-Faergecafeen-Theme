@@ -70,6 +70,11 @@
   text-decoration: none; 
   @include font(2, 1.8);
  }
+ 
+ .event-table a:hover,
+ .event-table a:focus {
+	 text-decoration:underline;
+ }
 
 /* ### featured event */
 .event-featured {
