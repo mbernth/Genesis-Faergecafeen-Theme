@@ -4,7 +4,12 @@
   	-------------------------------------- */
   	.site-inner,
   	.wrap {
-    	max-width: 1150px; }
+    	max-width: 1150px; 
+	}
+	
+	.site-inner {
+	    padding-top: 238px;
+	}
 
 	.title-area {
     	padding: 20px 0 20px; }
@@ -60,6 +65,34 @@
 	}
 	.coll12 {
 		@include grid(12, 40, 1150);
+	}
+	
+	/* Footer Widgets
+	--------------------------------------------- */
+	
+	.footer-widgets .widget-area {
+		@include grid(3, 40, 1150);
+	}
+	
+	/* Default Content Grid
+	--------------------------------------------- */
+	.coll_content {
+		@include structure(770, 1150);
+	}
+	.coll_sidebar {
+		@include structure(340, 1150);
+	}
+
+	/* ### With Sidebar */
+	.content-sidebar .coll2{
+		@include grid(2, 40, 770);
+	}
+	.content-sidebar .coll3{
+		@include grid(3, 40, 770);
+	}
+	.content-sidebar .coll_content,
+	.content-sidebar .coll_sidebar {
+		@include structure(365, 770);
 	}
 
   	/* Home page layout

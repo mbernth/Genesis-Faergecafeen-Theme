@@ -5,6 +5,10 @@
 		max-width: 960px;
 	}
 	
+	.site-inner {
+	    padding-top: 234px;
+	}
+	
 	.title-area {
     	padding: 20px 0 20px;
 	}
@@ -15,9 +19,13 @@
 	}
 	
 	.genesis-nav-menu {
-		@include font(1.4, 1.8);
+		@include font(1.2, 1.6);
 		letter-spacing:0.1rem;
 		font-weight:700;
+	}
+	
+	.genesis-nav-menu a {
+    	padding: 20px 10px 15px;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -95,6 +103,36 @@
 	}
 	.coll12 {
 		@include grid(12, 30, 960);
+	}
+	
+	/* Footer Widgets
+	--------------------------------------------- */
+	.footer-widgets .wrap {
+		max-width:90%;
+	}
+	.footer-widgets .widget-area {
+		@include grid(3, 30, 960);
+	}
+	
+	/* Default Content Grid
+	--------------------------------------------- */
+	.coll_content {
+		@include structure(620, 960);
+	}
+	.coll_sidebar {
+		@include structure(300, 960);
+	}
+
+	/* ### With Sidebar */
+	.content-sidebar .coll2{
+		@include grid(2, 30, 620);
+	}
+	.content-sidebar .coll3{
+		@include grid(3, 30, 620);
+	}
+	.content-sidebar .coll_content,
+	.content-sidebar .coll_sidebar {
+		@include structure(295, 620);
 	}
 	
 	/* Instagram feed CSS

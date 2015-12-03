@@ -329,19 +329,40 @@ function mono_default_gridset() {
 				
 				}
 				
+			elseif( get_row_layout() == 'content_and_sidebar' ):
+			
+				if (get_sub_field('hide')){
+					}else{
+						
+				if (get_sub_field('float_right')){
+					echo '<div class="gridcontainer sidebar_content">';
+					}else{
+					echo '<div class="gridcontainer content_sidebar">';
+				}
+				
+					echo '<article class="coll_content">';
+						the_sub_field('content');
+					echo '</article>';
+					echo '<aside class="coll_sidebar">';
+						the_sub_field('sidebar');
+					echo '</aside>';
+				echo '</div>';
+				
+				}
+				
 			elseif( get_row_layout() == 'three_columns' ):
 				
 				if (get_sub_field('hide')){
 					}else{
 				echo '<div class="gridcontainer">';
 					echo '<div class="coll3">';
-        				the_sub_field('headline_left');
+        				the_sub_field('content_left');
 					echo '</div>';
 					echo '<div class="coll3">';
-						the_sub_field('headline_center');
+						the_sub_field('content_center');
 					echo '</div>';
 					echo '<div class="coll3">';
-						the_sub_field('headline_right');
+						the_sub_field('content_right');
 					echo '</div>';
 				echo '</div>';
 				

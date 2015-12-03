@@ -71,3 +71,32 @@
 .coll12 {
 	@include grid(12, 40, 1200);
 }
+
+/* Default Content Grid
+--------------------------------------------- */
+.coll_content {
+	float: left;
+	@include structure(800, 1200);
+}
+.coll_sidebar {
+	float: right;
+	@include structure(360, 1200);
+}
+.sidebar_content .coll_content {
+	float: right;
+}
+.sidebar_content .coll_sidebar {
+	float: left;
+}
+
+/* ### With Sidebar */
+.content-sidebar .coll2{
+	@include grid(2, 40, 800);
+}
+.content-sidebar .coll3{
+	@include grid(3, 40, 800);
+}
+.content-sidebar .coll_content,
+.content-sidebar .coll_sidebar {
+	@include structure(380, 800);
+}
