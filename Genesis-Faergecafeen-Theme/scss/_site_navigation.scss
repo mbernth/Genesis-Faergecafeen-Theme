@@ -27,9 +27,7 @@
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .current_page_parent a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+.genesis-nav-menu .current_page_parent a {
 	color: $color-primary-two;
 	text-decoration: none;
 	border-bottom:5px solid $color-background;
@@ -177,7 +175,11 @@
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: darken($color-primary-one, 20%);
+	display:block;
+	position:absolute;
+	width:100%;
+	z-index:3000;
+	background-color: transparent;
 }
 
 .nav-secondary .wrap {

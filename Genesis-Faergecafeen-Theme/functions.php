@@ -368,6 +368,37 @@ function mono_default_gridset() {
 				
 				}
 				
+			elseif( get_row_layout() == 'booking_button' ):
+			
+				if (get_sub_field('hide')){
+					}else{
+				echo '<div class="gridcontainer booking_area">';
+					echo '<div class="coll1">';
+						if ( ! wp_is_mobile() ) {
+							echo '<a href="#" data-display="box-menu" class="button booking">';
+								the_sub_field('booking_label'); 
+							echo '</a>';
+						}else{
+							echo '<a href="';
+								the_sub_field('booking_url'); 
+							echo '" class="button booking" target="_blank">';
+								the_sub_field('booking_label'); 
+							echo '</a>';
+						}
+						if ( ! wp_is_mobile() ) {
+							echo '<span id="box-menu" class="portBox">';
+							echo '<iframe  height="540" width="1080" scrolling="auto" frameborder="0" src="';
+								the_sub_field('booking_url');
+							echo '"></iframe>';
+							echo '</span>';
+						}else{
+		
+						}
+					echo '</div>';
+				echo '</div>';
+				
+				}
+				
 				
         	endif;
 

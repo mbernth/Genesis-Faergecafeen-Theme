@@ -590,6 +590,24 @@ td {
 th {
   font-weight: 400; }
 
+/* ## Tablepress
+--------------------------------------------- */
+.tablepress tfoot th,
+.tablepress thead th {
+  background-color: #e0d3b0;
+  font-weight: 700;
+  vertical-align: middle; }
+
+.tablepress tbody td,
+.tablepress tfoot th {
+  border-top: 1px solid #e0d3b0; }
+
+.tablepress td.column-2,
+.tablepress th.column-2,
+.tablepress td.column-3,
+.tablepress th.column-3 {
+  text-align: right; }
+
 /* ## Screen Reader Text
 --------------------------------------------- */
 .screen-reader-text,
@@ -833,6 +851,11 @@ th {
 
 .sidebar_content .coll_sidebar {
   float: left; }
+
+.gridcontainer.booking_area {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid #e0d3b0; }
 
 /* ### With Sidebar */
 .content-sidebar .coll2 {
@@ -1397,9 +1420,7 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .current_page_parent a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu .sub-menu .current-menu-item > a:focus {
+.genesis-nav-menu .current_page_parent a {
   color: #e0d3b0;
   text-decoration: none;
   border-bottom: 5px solid #f3eddf; }
@@ -1523,7 +1544,11 @@ img.alignright,
 /* ## Secondary Navigation
 --------------------------------------------- */
 .nav-secondary {
-  background-color: black; }
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
+  background-color: transparent; }
 
 .nav-secondary .wrap {
   width: 100%;
@@ -1666,14 +1691,6 @@ img.alignright,
 .event-table time {
   font-weight: 800; }
 
-.event-table a.button {
-  padding: 10px 25px;
-  float: right;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 18px;
-  line-height: 1.8rem; }
-
 .event-table a {
   text-decoration: none;
   font-size: 20px;
@@ -1684,6 +1701,30 @@ img.alignright,
 .event-table a:hover,
 .event-table a:focus {
   text-decoration: underline; }
+
+.event-table a.button {
+  padding: 10px 25px;
+  float: right;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 18px;
+  line-height: 1.8rem; }
+
+.event-table a.button:hover,
+.event-table a.button:focus {
+  text-decoration: none; }
+
+.event-table .button.sold_out {
+  padding: 10px 25px;
+  float: right;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  background-color: #d71a44;
+  cursor: inherit;
+  min-width: 125px;
+  text-align: center; }
 
 /* ### featured event */
 .event-featured {

@@ -60,12 +60,6 @@
   font-weight: 800; 
 }
 
-.event-table a.button {
-  padding: 10px 25px;
-  float: right;
-  @include font(1.8, 1.8);
-}
-
 .event-table a {
   text-decoration: none; 
   @include font(2, 1.8);
@@ -75,6 +69,26 @@
  .event-table a:focus {
 	 text-decoration:underline;
  }
+
+.event-table a.button {
+  padding: 10px 25px;
+  float: right;
+  @include font(1.8, 1.8);
+}
+.event-table a.button:hover,
+.event-table a.button:focus {
+	text-decoration:none;
+}
+
+.event-table .button.sold_out {
+  padding: 10px 25px;
+  float: right;
+  @include font(1.8, 1.8);
+  background-color:$color-secondary-two;
+  cursor: inherit;
+  min-width:125px;
+  text-align:center;
+}
 
 /* ### featured event */
 .event-featured {

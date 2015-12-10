@@ -61,11 +61,15 @@ function cafe_events() {
 					echo '</a></span>';
 				echo '</td>';
 				echo '<td>';
+					if( have_rows('sold_out') ){
+					echo '<span class="button sold_out">' . __( 'Udsolgt', 'mono' ) . '</span>';
+						}else{
 					echo '<a href="';
 					the_sub_field('billet');
 					echo '" class="button" target="_blank">';
-					echo 'Bestil';
+					echo '' . __( 'Køb billet', 'mono' ) . '';
 					echo '</a>';
+					}
 				echo '</td>';
 			echo '</tr>';
 			}
