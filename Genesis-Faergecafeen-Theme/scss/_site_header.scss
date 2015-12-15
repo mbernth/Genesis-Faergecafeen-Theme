@@ -57,9 +57,9 @@
 }
 
 .site-description {
-	@include font(1.6, 2.4);
-	font-weight: 300;
-	line-height: 1.5;
+	@include font(0, 0);
+	text-indent: -999em;
+    text-decoration: none;
 }
 
 .site-description,
