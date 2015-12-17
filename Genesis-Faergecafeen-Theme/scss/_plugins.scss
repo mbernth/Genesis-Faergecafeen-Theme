@@ -171,3 +171,17 @@
     line-height: 1.1;
     cursor: pointer;
 }
+
+/* Mailchimp
+---------------------------------------------------------------------------------------------------- */
+#mc_signup_submit {
+    margin-top: 0 !important;
+    width: auto !important;
+    float: right;
+    clear: both;
+}
+
+#mc_unsub_link {
+	clear:both;
+    margin-top: 1.0em;
+}

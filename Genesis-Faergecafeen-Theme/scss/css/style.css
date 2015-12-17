@@ -475,7 +475,7 @@ input,
 select,
 textarea {
   background-color: #f9f6ef;
-  border: 1px solid #2d2a23;
+  border: 1px solid #5a5446;
   color: #2d2a23;
   font-size: 16px;
   font-size: 1.6rem;
@@ -504,6 +504,9 @@ input[type="radio"] {
   color: #2d2a23;
   font-weight: 300; }
 
+label {
+  font-weight: 400; }
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -511,7 +514,7 @@ input[type="submit"],
 .button {
   background-color: #79ad36;
   border: 0;
-  color: #f3eddf !important;
+  color: #f3eddf;
   cursor: pointer;
   font-size: 18px;
   font-size: 1.8rem;
@@ -539,13 +542,18 @@ input:focus[type="submit"],
 .entry-content .button:focus {
   color: #f3eddf; }
 
+.footer-widgets a.button,
 .footer-widgets button,
 .footer-widgets input[type="button"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-  background-color: #79ad36;
-  color: #f3eddf; }
+  background-color: #e0d3b0;
+  color: #5a5446;
+  text-decoration: none;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center; }
 
 .footer-widgets button:hover,
 .footer-widgets input:hover[type="button"],
@@ -557,8 +565,9 @@ input:focus[type="submit"],
 .footer-widgets input:focus[type="reset"],
 .footer-widgets input:focus[type="submit"],
 .footer-widgets .button:focus {
-  background-color: #5e862a;
-  color: #f3eddf; }
+  background-color: #5a5446;
+  color: #e0d3b0;
+  text-decoration: none; }
 
 .button {
   display: inline-block; }
@@ -1303,6 +1312,18 @@ img.alignright,
   margin: 20px 0 5px 0;
   line-height: 1.1;
   cursor: pointer; }
+
+/* Mailchimp
+---------------------------------------------------------------------------------------------------- */
+#mc_signup_submit {
+  margin-top: 0 !important;
+  width: auto !important;
+  float: right;
+  clear: both; }
+
+#mc_unsub_link {
+  clear: both;
+  margin-top: 1.0em; }
 
 /*
 - Site Header
@@ -2119,12 +2140,14 @@ li.comment {
 .footer-widgets input {
   border: 1px solid #2d2a23; }
 
+/*
 .footer-widgets a.button,
 .footer-widgets a:hover,
 .footer-widgets a:focus {
-  color: #e0d3b0;
-  text-decoration: underline; }
-
+	color: $color-primary-two;
+	text-decoration:none;
+}
+*/
 .footer-widgets li {
   border-bottom: 1px dotted #2d2a23;
   margin-bottom: 10px;

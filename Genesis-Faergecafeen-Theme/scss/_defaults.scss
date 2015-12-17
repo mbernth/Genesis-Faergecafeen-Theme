@@ -221,7 +221,7 @@ input,
 select,
 textarea {
 	background-color: $color-white;
-	border: 1px solid $color-black;
+	border: 1px solid #5a5446;
 	color: $color-black;
 	@include font(1.6, 2.4);
 	font-weight: 300;
@@ -252,6 +252,10 @@ input[type="radio"] {
 	font-weight: 300;
 }
 
+label {
+	font-weight:400;
+}
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -259,7 +263,7 @@ input[type="submit"],
 .button {
 	background-color: $color-secondary-one;
 	border: 0;
-	color: $color-background !important;
+	color: $color-background;
 	cursor: pointer;
 	@include font(1.8, 1.8);
 	font-weight: 300;
@@ -287,13 +291,18 @@ input:focus[type="submit"],
 	color: $color-background;
 }
 
+.footer-widgets a.button,
 .footer-widgets button,
 .footer-widgets input[type="button"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: $color-secondary-one;
-	color: $color-background;
+	background-color: $color-primary-two;
+	color: #5a5446;
+	text-decoration:none;
+	width:100%;
+	margin:20px 0;
+	text-align:center;
 }
 
 .footer-widgets button:hover,
@@ -306,8 +315,9 @@ input:focus[type="submit"],
 .footer-widgets input:focus[type="reset"],
 .footer-widgets input:focus[type="submit"],
 .footer-widgets .button:focus {
-	background-color: darken($color-secondary-one, 10%);
-	color: $color-background;
+	background-color: #5a5446;
+	color: $color-primary-two;
+	text-decoration:none;
 }
 
 .button {
