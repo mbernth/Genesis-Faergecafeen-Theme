@@ -185,3 +185,83 @@
 	clear:both;
     margin-top: 1.0em;
 }
+
+/* Gravity forms
+---------------------------------------------------------------------------------------------------- */
+
+.gform_wrapper form {
+	display:block;
+	float:left;
+	width:100%;
+	background-color:$color-primary-two;
+	padding:20px;
+}
+
+.gform_wrapper .top_label .gfield_label {
+    margin: 0 0 5px;
+    font-weight: 700;
+    display: -moz-inline-stack;
+    display: inline-block;
+    @include font(1.6, 1.6);
+    clear: both;
+}
+.gform_wrapper .ginput_complex label{
+	display: block;
+    @include font(1.4, 1.6);
+    letter-spacing: .5pt;
+    white-space: nowrap;
+    margin: 3px 0 0;
+}
+.gform_wrapper form li, .gform_wrapper li {
+	margin-bottom:10px;
+}
+body .gform_wrapper label.gfield_label+div.ginput_container {
+    margin-top: 2px;
+}
+
+.gform_wrapper input[type=email], 
+.gform_wrapper input[type=number], 
+.gform_wrapper input[type=password], 
+.gform_wrapper input[type=tel], 
+.gform_wrapper input[type=text], 
+.gform_wrapper input[type=url],
+.gform_wrapper textarea {
+	border:none;
+	background:$color-background;
+}
+.gform_wrapper textarea {
+	margin-bottom:0;
+}
+
+.gform_wrapper textarea.large {
+    height: 150px;
+    width: 100%;
+}
+
+.gform_wrapper .hidden_label input.large, 
+.gform_wrapper .hidden_label select.large, 
+.gform_wrapper .top_label input.large, 
+.gform_wrapper .top_label select.large {
+    width: 100%;
+}
+
+.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=email], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=number], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=password], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=tel], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=text], .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=url], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=email], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=number], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=password], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=tel], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=text], .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=url], .gform_wrapper .ginput_complex input[type=email], .gform_wrapper .ginput_complex input[type=number], .gform_wrapper .ginput_complex input[type=password], .gform_wrapper .ginput_complex input[type=tel], .gform_wrapper .ginput_complex input[type=text], .gform_wrapper .ginput_complex input[type=url] {
+    width: 100%;
+}
+
+.gform_wrapper .gform_footer {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+    @include font(1.8, 1.8);
+	float:right;
+	display:block;
+}
+
+.gform_wrapper .ginput_complex.ginput_container.has_first_name.has_middle_name.has_last_name span.name_first, .gform_wrapper .ginput_complex.ginput_container.has_first_name.has_middle_name.has_last_name span.name_middle, .gform_wrapper .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name span.name_first {
+    margin-right: 2.5%;
+}

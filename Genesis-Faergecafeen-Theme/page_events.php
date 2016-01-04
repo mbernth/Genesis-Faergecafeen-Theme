@@ -62,12 +62,12 @@ function cafe_events() {
 				echo '</td>';
 				echo '<td>';
 					if( have_rows('sold_out') ){
-					echo '<span class="button sold_out">' . __( 'Udsolgt', 'mono' ) . '</span>';
+					echo '<span class="button sold_out">' . __( 'Sold out', 'mono' ) . '</span>';
 						}else{
 					echo '<a href="';
 					the_sub_field('billet');
 					echo '" class="button" target="_blank">';
-					echo '' . __( 'Køb billet', 'mono' ) . '';
+					echo '' . __( 'Buy ticket', 'mono' ) . '';
 					echo '</a>';
 					}
 				echo '</td>';
