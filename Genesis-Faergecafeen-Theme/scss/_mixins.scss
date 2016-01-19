@@ -37,8 +37,10 @@ $color-secondary-two_rgb: rgb(215, 26, 68) ; /* Red */
 --------------------------------------------- */
 
 /* Primary Font Faminly */
-$font-bread: "ff-celeste-web",serif;;
-$font-headlines: "ff-celeste-web",serif;;
+/* $font-bread: Georgia, "Times New Roman", Times, "ff-celeste-web", serif;
+$font-headlines: Georgia, "Times New Roman", Times, "ff-celeste-web", serif; */
+$font-bread: Georgia, "Times New Roman", Times, serif;
+$font-headlines: Georgia, "Times New Roman", Times,s erif;
 
 /* Basic Font Sizes mixin */
 @mixin font-size($sizeValue: 1.6) {

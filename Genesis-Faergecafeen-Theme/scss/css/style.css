@@ -242,6 +242,8 @@ MIXINS
 /* Typography
 --------------------------------------------- */
 /* Primary Font Faminly */
+/* $font-bread: Georgia, "Times New Roman", Times, "ff-celeste-web", serif;
+$font-headlines: Georgia, "Times New Roman", Times, "ff-celeste-web", serif; */
 /* Basic Font Sizes mixin */
 p.standard {
   font-size: 18px;
@@ -285,7 +287,7 @@ body > div {
 body {
   background-color: #f3eddf;
   color: #2d2a23;
-  font-family: "ff-celeste-web", serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 26px;
@@ -369,7 +371,7 @@ h4,
 h5,
 h6 {
   color: #2d2a23;
-  font-family: "ff-celeste-web", serif;
+  font-family: Georgia, "Times New Roman", Times, s erif;
   font-weight: 400;
   margin: 0 0 10px; }
 
