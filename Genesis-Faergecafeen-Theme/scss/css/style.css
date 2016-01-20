@@ -1094,10 +1094,11 @@ img.alignright,
 .wp-caption-text {
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 18px;
-  line-height: 1.8rem;
-  font-weight: 700;
-  text-align: center; }
+  line-height: 16px;
+  line-height: 1.6rem;
+  text-align: left;
+  font-style: italic;
+  margin-top: 5px; }
 
 .entry-content p.wp-caption-text {
   margin-bottom: 0; }
@@ -1912,6 +1913,21 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .booking_btn {
   float: right; }
+
+/* Event Page
+----------------------------------------------- */
+.event .top {
+  display: block;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #e0d3b0;
+  margin-bottom: 40px; }
+
+.event .last {
+  display: block;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e0d3b0; }
 
 /* Menu
 ---------------------------------------------------------------------------------------------------- */

@@ -411,3 +411,58 @@ function mono_default_gridset() {
 	endif;
 	}
 }
+
+// check if top button
+add_action( 'genesis_entry_content', 'booking_top_button', 1 );
+function booking_top_button() {
+	if ( is_single() || is_page() ) {
+		
+	if( have_rows('extra_content') ):
+
+		// loop through the rows of data
+    	while ( have_rows('extra_content') ) : the_row();
+				
+				if( get_row_layout() == 'booking_button' ):
+			
+					if (get_sub_field('top_booking_button')){
+						
+					echo '<div class="gridcontainer booking_area_top">';
+						echo '<div class="coll1">';
+							if ( ! wp_is_mobile() ) {
+								echo '<a href="#" data-display="box-menu" class="button booking">';
+									the_sub_field('booking_label'); 
+								echo '</a>';
+							}else{
+								echo '<a href="';
+									the_sub_field('booking_url'); 
+								echo '" class="button booking" target="_blank">';
+									the_sub_field('booking_label'); 
+								echo '</a>';
+							}
+							if ( ! wp_is_mobile() ) {
+								echo '<span id="box-menu" class="portBox">';
+								echo '<iframe  height="540" width="1080" scrolling="auto" frameborder="0" src="';
+									the_sub_field('booking_url');
+								echo '"></iframe>';
+								echo '</span>';
+							}else{
+		
+							}
+						echo '</div>';
+					echo '</div>';
+					
+					}else{
+						
+					}
+				
+        	endif;
+
+    	endwhile;
+
+	else :
+
+    // no layouts found
+
+	endif;
+	}
+}

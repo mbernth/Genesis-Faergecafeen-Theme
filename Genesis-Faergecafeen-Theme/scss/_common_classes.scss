@@ -223,9 +223,10 @@ img.alignright,
 }
 
 .wp-caption-text {
-	@include font(1.4, 1.8);
-	font-weight: 700;
-	text-align: center;
+	@include font(1.4, 1.6);
+	text-align: left;
+	font-style:italic;
+	margin-top:5px;
 }
 
 .entry-content p.wp-caption-text {

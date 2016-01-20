@@ -78,6 +78,30 @@ function mono_repeater_menu() {
 	
 }
 
+// check if top button
+add_action( 'genesis_entry_content', 'booking_menu_top_button', 1 );
+function booking_menu_top_button() {
+	$booking_text = get_field( 'booking_label' );  //Button text
+	$booking_url = get_field( 'booking_url' );  //Button url
+	$booking_top = get_field( 'top_booking_button' );
+	
+	if ( $booking_top ) {
+		if ( ! wp_is_mobile() ) {
+			echo '<a href="#" data-display="box-menu" class="button booking">' . $booking_text . '</a>';
+		}else{
+			echo '<a href="' . $booking_url . '" class="button booking" target="_blank">' . $booking_text . '</a>';
+		}
+		if ( ! wp_is_mobile() ) {
+			echo '<span id="box-menu" class="portBox">';
+			echo '<iframe  height="540" width="1080" scrolling="auto" frameborder="0" src="' . $booking_url . '"></iframe>';
+			echo '</span>';
+		}else{
+		
+		}
+	}
+	
+}
+
 
 
 //* Run the Genesis loop
