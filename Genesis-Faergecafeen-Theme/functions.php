@@ -374,14 +374,14 @@ function mono_default_gridset() {
 					}else{
 				echo '<div class="gridcontainer booking_area">';
 					echo '<div class="coll1">';
-						if ( ! wp_is_mobile() ) {
-							echo '<a href="#" data-display="box-menu" class="button booking">';
+						if ( wp_is_mobile() ) {
+							echo '<a href="';
+								the_sub_field('booking_url'); 
+							echo '" class="button booking" >';
 								the_sub_field('booking_label'); 
 							echo '</a>';
 						}else{
-							echo '<a href="';
-								the_sub_field('booking_url'); 
-							echo '" class="button booking" target="_blank">';
+							echo '<a href="#" data-display="box-menu" class="button booking">';
 								the_sub_field('booking_label'); 
 							echo '</a>';
 						}
@@ -428,14 +428,15 @@ function booking_top_button() {
 						
 					echo '<div class="gridcontainer booking_area_top">';
 						echo '<div class="coll1">';
-							if ( ! wp_is_mobile() ) {
-								echo '<a href="#" data-display="box-menu" class="button booking">';
-									the_sub_field('booking_label'); 
-								echo '</a>';
-							}else{
+							if ( wp_is_mobile() ) {
 								echo '<a href="';
 									the_sub_field('booking_url'); 
-								echo '" class="button booking" target="_blank">';
+								echo '" class="button booking">';
+									the_sub_field('booking_label'); 
+								echo '</a>';
+								
+							}else{
+								echo '<a href="#" data-display="box-menu" class="button booking">';
 									the_sub_field('booking_label'); 
 								echo '</a>';
 							}

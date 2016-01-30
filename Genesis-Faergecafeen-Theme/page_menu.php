@@ -65,7 +65,7 @@ function mono_repeater_menu() {
 		if ( ! wp_is_mobile() ) {
 			echo '<a href="#" data-display="box-menu" class="button booking">' . $booking_text . '</a>';
 		}else{
-			echo '<a href="' . $booking_url . '" class="button booking" target="_blank">' . $booking_text . '</a>';
+			echo '<a href="' . $booking_url . '" class="button booking">' . $booking_text . '</a>';
 		}
 		if ( ! wp_is_mobile() ) {
 			echo '<span id="box-menu" class="portBox">';
