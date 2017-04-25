@@ -306,6 +306,12 @@
 	.menu .entry-content .gridcontainer.recomended .coll1 {
 		padding:20px;
 	}
+	
+	/* # Selskabsmenu
+	---------------------------------------------------------------------------------------------------- */
+	.gridder-list{
+    	@include rowMachine(3,2.5%);
+	}
 
 
 }

@@ -2,6 +2,9 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+//* Include Icons
+include_once( get_stylesheet_directory() . '/lib/svg_icons.php' );
+
 //* Set Localization (do not remove)
 load_child_theme_textdomain( 'faergecafe', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'faergecafe' ) );
 
