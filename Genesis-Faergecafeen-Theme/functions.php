@@ -132,7 +132,7 @@ genesis_register_sidebar( array(
 //* Display featured image on page and posts
 add_action ( 'genesis_after_header', 'single_post_featured_image', 15 );
 function single_post_featured_image() {
-	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
+	if ( (is_page()) && has_post_thumbnail() ) :
 		
 		$img = genesis_get_image( array( 'format' => 'src' ) );
 		printf( '<div class="image-section" style="background-image:url(%s);"><div class="gradient"></div></div>', $img );
@@ -143,13 +143,13 @@ function single_post_featured_image() {
 //* Add body class for featured image
 add_filter( 'body_class', 'sp_body_class' );
 function sp_body_class( $classes ) {
-	if ( (is_single() || is_page()) && has_post_thumbnail() )
+	if ( (is_page()) && has_post_thumbnail() )
 		$classes[] = 'featured-image';
 		return $classes;
 }
 add_action( 'wp_enqueue_scripts', 'featured_height' );
 function featured_height() {
-	if ( (is_single() || is_page()) && has_post_thumbnail() ){
+	if ( (is_page()) && has_post_thumbnail() ){
 		wp_enqueue_script( 'mono-jquery', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.min.js', array( 'jquery' ), '1.0.0', true );
 		wp_enqueue_script( 'mono-featured-height', get_bloginfo( 'stylesheet_directory' ) . '/js/image.height.js', array( 'jquery' ), '1.0.0', true );
 	}
