@@ -49,6 +49,17 @@ function top_image() {
 		echo '<div class="gradient"><div class="wrap">';
 		echo '<h1>' . $headline . '</h1>';
 		echo '' . $text . '';
+		if ($button_url) {
+			echo '<a href="' . $button_url . '" class="button" target="_blank">' . $button_text . '</a>';
+		}
+		echo '</div></div></div>';
+	}
+	/*
+	if ( $image || $headline || $text || $button_text || $button_url ) {
+		echo '<div class="image-section home-image" style="background-image:url(' . $image . ');">';
+		echo '<div class="gradient"><div class="wrap">';
+		echo '<h1>' . $headline . '</h1>';
+		echo '' . $text . '';
 		if ( ! wp_is_mobile() ) {
 			echo '<a href="#" data-display="box-top" class="button">' . $button_text . '</a>';
 		}else{
@@ -63,7 +74,7 @@ function top_image() {
 		
 		}
 	}
-	
+	*/
 }
 
 // Events and featured event

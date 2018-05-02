@@ -7,519 +7,605 @@
 		"uuidString": "7BFC869B-BF51-4EE2-A665-A510B9D87751"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "26680",
 "files": {
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_1200.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_1200.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_1440.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_1440.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_1920.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_1920.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_480.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_480.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_600.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_600.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_767.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_767.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_800.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_800.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_880.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_880.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_960.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_960.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_common_classes.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_common_classes.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_content_area.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_content_area.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_defaults.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_defaults.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_events.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_events.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_footer_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_footer_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_menu.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_menu.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_mixins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_mixins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_plugins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_plugins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_print_styles.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_print_styles.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_reset.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_reset.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_sidebars.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_sidebars.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_footer.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_footer.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_grid.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_grid.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_header.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_header.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_homepage.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_homepage.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_navigation.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_site_navigation.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_structure_layout.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_structure_layout.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/style.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.sass-cache\/024d03745a6995d0a5021cb065464072b86d31ee\/style.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_1200.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_1200.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_800.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_800.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_960.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_960.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_common_classes.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_common_classes.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_content_area.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_content_area.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_defaults.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_defaults.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_footer_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_footer_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_mixins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_mixins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_plugins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_plugins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_print_styles.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_print_styles.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_reset.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_reset.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_sidebars.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_sidebars.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_site_footer.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_site_footer.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_site_header.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_site_header.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_site_navigation.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_site_navigation.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_structure_layout.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_structure_layout.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/style.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.sass-cache\/302fbfc3f7ce4a4ab05da354eacb4286ec8a4df5\/style.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_1200.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_1200.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_800.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_800.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_960.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_960.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_common_classes.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_common_classes.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_content_area.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_content_area.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_defaults.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_defaults.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_footer_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_footer_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_mixins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_mixins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_plugins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_plugins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_print_styles.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_print_styles.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_reset.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_reset.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_sidebars.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_sidebars.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_site_footer.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_site_footer.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_site_header.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_site_header.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_site_navigation.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_site_navigation.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_structure_layout.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_structure_layout.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/style.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.sass-cache\/88c383662805db34be11e27f0a30222a3c38590e\/style.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_1200.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_1200.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_1440.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_1440.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_1920.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_1920.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_600.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_600.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_800.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_800.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_880.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_880.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_960.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_960.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_common_classes.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_common_classes.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_content_area.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_content_area.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_defaults.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_defaults.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_footer_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_footer_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_mixins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_mixins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_plugins.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_plugins.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_print_styles.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_print_styles.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_reset.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_reset.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_sidebars.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_sidebars.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_site_footer.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_site_footer.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_site_header.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_site_header.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_site_navigation.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_site_navigation.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_structure_layout.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_structure_layout.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_widgets.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/_widgets.scssc",
 		"oF": 0
 		},
 	"\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/style.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.sass-cache\/ab96edd918ff3ceac7f1784a7b1550a424f15788\/style.scssc",
@@ -947,7 +1033,8 @@
 	"creationDate": 514823772,
 	"displayValue": "Færgecafeen",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-karate"
+	"iconImageName": "meme-karate",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -955,6 +1042,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1351,6 +1439,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -1358,6 +1450,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -1455,6 +1551,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -1471,9 +1571,17 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -1498,6 +1606,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -1531,9 +1643,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -1563,6 +1675,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -1572,14 +1688,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1602,6 +1710,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -2147,6 +2259,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -2215,6 +2331,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -2254,6 +2374,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -2667,7 +2791,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -2700,6 +2825,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2711,6 +2837,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
@@ -2741,7 +2868,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -2773,13 +2901,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -2788,7 +2916,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -2808,7 +2937,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -2836,7 +2966,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -2883,9 +3014,11 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
