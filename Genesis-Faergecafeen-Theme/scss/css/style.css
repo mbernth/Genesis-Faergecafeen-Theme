@@ -3607,6 +3607,19 @@ a.gridder-close:hover {
   line-height: 1.6rem; }
 
 /*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+.privacy_tools form {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px; }
+  .privacy_tools form input[type="email"] {
+    margin-bottom: 40px; }
+  .privacy_tools form input[type="submit"] {
+    margin-bottom: 40px;
+    float: right; }
+
+/*
 - Site Header
 	- Title Area
 	- Widget Area
